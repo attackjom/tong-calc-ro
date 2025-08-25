@@ -118,6 +118,19 @@ export class Scholar extends Mage {
         { label: 'Lv 5', isUse: true, value: 5, bonus: { m_my_element_wind: 5 } },
       ],
     },
+	{
+      inputType: 'dropdown',
+      label: 'Flame Launcher',
+      name: 'Flame Launcher',
+      dropdown: [
+        { label: '-', isUse: false, value: 0 },
+        { label: 'Lv 1', isUse: true, value: 1, bonus: { m_my_element_fire: 1 } },
+        { label: 'Lv 2', isUse: true, value: 2, bonus: { m_my_element_fire: 2 } },
+        { label: 'Lv 3', isUse: true, value: 3, bonus: { m_my_element_fire: 3 } },
+        { label: 'Lv 4', isUse: true, value: 4, bonus: { m_my_element_fire: 4 } },
+        { label: 'Lv 5', isUse: true, value: 5, bonus: { m_my_element_fire: 5 } },
+      ],
+    },
     {
       inputType: 'dropdown',
       label: 'Frost Weapon',

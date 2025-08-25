@@ -174,7 +174,7 @@ export class ElementalMaster extends Sorcerer {
   private readonly atkSkillList4th: AtkSkillModel[] = [
     {
       name: 'Diamond Storm',
-      label: '[V3] Diamond Storm Lv5',
+      label: '[K] Diamond Storm Lv5',
       value: 'Diamond Storm==5',
       acd: 0.5,
       fct: 1.5,
@@ -189,15 +189,15 @@ export class ElementalMaster extends Sorcerer {
         const { level: baseLevel } = model;
 
         if (this.isSpirit('Divulio')) {
-          return (5400 + skillLevel * 1800 + totalSpl * 10) * (baseLevel / 100);
+          return (7800 + skillLevel * 2600 + totalSpl * 10) * (baseLevel / 100);
         }
 
-        return (400 + skillLevel * 1550 + totalSpl * 5) * (baseLevel / 100);
+        return (500 + skillLevel * 2400 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Conflagration',
-      label: '[V3] Conflagration Lv5',
+      label: '[K] Conflagration Lv5',
       value: 'Conflagration==5',
       acd: 0.5,
       fct: 1.5,
@@ -212,15 +212,15 @@ export class ElementalMaster extends Sorcerer {
         const { level: baseLevel } = model;
 
         if (this.isSpirit('Ardor')) {
-          return (500 + skillLevel * 1050 + totalSpl * 7) * (baseLevel / 100);
+          return (700 + skillLevel * 1300 + totalSpl * 7) * (baseLevel / 100);
         }
 
-        return (500 + skillLevel * 650 + totalSpl * 5) * (baseLevel / 100);
+        return (700 + skillLevel * 1100 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Lightning Land',
-      label: '[V3] Lightning Land Lv5',
+      label: '[K] Lightning Land Lv5',
       value: 'Lightning Land==5',
       acd: 0.5,
       fct: 1.5,
@@ -235,15 +235,15 @@ export class ElementalMaster extends Sorcerer {
         const { level: baseLevel } = model;
 
         if (this.isSpirit('Procella')) {
-          return (500 + skillLevel * 1050 + totalSpl * 7) * (baseLevel / 100);
+          return (700 + skillLevel * 1300 + totalSpl * 7) * (baseLevel / 100);
         }
 
-        return (500 + skillLevel * 650 + totalSpl * 5) * (baseLevel / 100);
+        return (700 + skillLevel * 1100 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Terra Drive',
-      label: '[V3] Terra Drive Lv5',
+      label: '[K] Terra Drive Lv5',
       value: 'Terra Drive==5',
       acd: 0.5,
       fct: 1.5,
@@ -258,15 +258,15 @@ export class ElementalMaster extends Sorcerer {
         const { level: baseLevel } = model;
 
         if (this.isSpirit('Terramotus')) {
-          return (5400 + skillLevel * 1800 + totalSpl * 10) * (baseLevel / 100);
+          return (7800 + skillLevel * 2600 + totalSpl * 10) * (baseLevel / 100);
         }
 
-        return (400 + skillLevel * 1500 + totalSpl * 5) * (baseLevel / 100);
+        return (500 + skillLevel * 2400 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Venom Swamp',
-      label: '[V3] Venom Swamp Lv5',
+      label: '[K] Venom Swamp Lv5',
       value: 'Venom Swamp==5',
       acd: 0.5,
       fct: 1.5,
@@ -281,15 +281,15 @@ export class ElementalMaster extends Sorcerer {
         const { level: baseLevel } = model;
 
         if (this.isSpirit('Serpens')) {
-          return (500 + skillLevel * 1050 + totalSpl * 7) * (baseLevel / 100);
+          return (700 + skillLevel * 1300 + totalSpl * 7) * (baseLevel / 100);
         }
 
-        return (500 + skillLevel * 650 + totalSpl * 5) * (baseLevel / 100);
+        return (700 + skillLevel * 1100 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Elemental Buster',
-      label: '[V3] Elemental Buster Lv10',
+      label: '[K] Elemental Buster Lv10',
       value: 'Elemental Buster==10',
       acd: 0.5,
       fct: 1.5,
@@ -306,9 +306,11 @@ export class ElementalMaster extends Sorcerer {
         const { model, skillLevel, status, monster } = input;
         const { totalSpl } = status;
         const { level: baseLevel } = model;
-        const raceBonus = monster.isRace('dragon', 'formless') ? 150 : 0;
 
-        return (500 + skillLevel * (2200 + raceBonus) + totalSpl * 10) * (baseLevel / 100);
+		if (monster.isRace('dragon', 'formless')) {
+			return (550 + skillLevel * 2800 + totalSpl * 10) * (baseLevel / 100);
+		}
+        return (550 + skillLevel * 2650 + totalSpl * 10) * (baseLevel / 100);
       },
     },
   ];
