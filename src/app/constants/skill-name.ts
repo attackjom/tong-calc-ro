@@ -272,6 +272,7 @@ const ACTIVE_PASSIVE_SKILL_NAMES = [
   'Talisman Mastery',
   'Soul Mastery',
   'Circle of Directions and Elementals',
+  'Increase AP',
 ] as const;
 
 export const OFFENSIVE_SKILL_NAMES = [

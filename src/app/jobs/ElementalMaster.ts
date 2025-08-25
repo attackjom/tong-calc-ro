@@ -334,6 +334,18 @@ export class ElementalMaster extends Sorcerer {
       inputType: 'dropdown',
       dropdown: genSkillList(10),
     },
+	{
+      name: 'Increase AP',
+      label: 'Increase AP',
+      inputType: 'dropdown',
+      dropdown: genSkillList(5),
+    },
+	{
+      name: 'Spell Enchanting',
+      label: 'Spell Enchanting',
+      inputType: 'dropdown',
+      dropdown: genSkillList(5),
+    },
     // {
     //   name: 'Elemental Spirit Mastery',
     //   label: 'Elemental Spirit',
