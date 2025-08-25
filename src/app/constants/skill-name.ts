@@ -15,6 +15,7 @@ const ACTIVE_PASSIVE_SKILL_NAMES = [
   '_SkyEmperor_Rising_Sun',
   '_SkyEmperor_Rising_Moon',
   'Talisman of Five Elements',
+  'Talisman of Magician',
   'Totem of Tutelary',
   '16th Night',
   'Abyss Slayer',
@@ -270,6 +271,7 @@ const ACTIVE_PASSIVE_SKILL_NAMES = [
   "Vulture's Eye",
   'Talisman Mastery',
   'Soul Mastery',
+  'Circle of Directions and Elementals',
 ] as const;
 
 export const OFFENSIVE_SKILL_NAMES = [

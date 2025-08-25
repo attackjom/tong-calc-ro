@@ -197,7 +197,7 @@ export class SoulAscetic extends SoulReaper {
     },
     {
       name: 'Talisman of Blue Dragon',
-      label: '[V2] Talisman of Blue Dragon Lv5',
+      label: '[K] Talisman of Blue Dragon Lv5',
       value: 'Talisman of Blue Dragon==5',
       acd: 0,
       fct: 1.5,
@@ -211,16 +211,16 @@ export class SoulAscetic extends SoulReaper {
         const talisMaster = this.learnLv('Talisman Mastery');
 
         if (this.isSkillActive('Talisman of Five Elements')) {
-          return (350 + skillLevel * (1650 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+          return (950 + skillLevel * (2950 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
 
         }
 
-        return (250 + skillLevel * (1450 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+        return (850 + skillLevel * (2250 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Talisman of White Tiger',
-      label: '[V2] Talisman of White Tiger Lv5',
+      label: '[K] Talisman of White Tiger Lv5',
       value: 'Talisman of White Tiger==5',
       acd: 0,
       fct: 1.5,
@@ -235,16 +235,16 @@ export class SoulAscetic extends SoulReaper {
         const talisMaster = this.learnLv('Talisman Mastery');
 
         if (this.isSkillActive('Talisman of Five Elements')) {
-          return (350 + skillLevel * (1350 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+          return (400 + skillLevel * (1400 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
 
         }
 
-        return (350 + skillLevel * (950 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+        return (4000 + skillLevel * (1000 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Talisman of Red Phoenix',
-      label: '[V2] Talisman of Red Phoenix Lv5',
+      label: '[K] Talisman of Red Phoenix Lv5',
       value: 'Talisman of Red Phoenix==5',
       acd: 0,
       fct: 1.5,
@@ -259,16 +259,16 @@ export class SoulAscetic extends SoulReaper {
         const talisMaster = this.learnLv('Talisman Mastery');
 
         if (this.isSkillActive('Talisman of Five Elements')) {
-          return (1200 + skillLevel * (1300 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+          return (1600 + skillLevel * (1850 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
 
         }
 
-        return (1000 + skillLevel * (900 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+        return (1400 + skillLevel * (1450 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Talisman of Black Tortoise',
-      label: '[V2] Talisman of Black Tortoise Lv5',
+      label: '[K] Talisman of Black Tortoise Lv5',
       value: 'Talisman of Black Tortoise==5',
       acd: 0,
       fct: 1.5,
@@ -283,16 +283,16 @@ export class SoulAscetic extends SoulReaper {
         const talisMaster = this.learnLv('Talisman Mastery');
 
         if (this.isSkillActive('Talisman of Five Elements')) {
-          return (1850 + skillLevel * (1850 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+          return (2300 + skillLevel * (2100 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
 
         }
 
-        return (2150 + skillLevel * (1450 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
+        return (2150 + skillLevel * (1600 + talisMaster * 15) + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Talisman of Four Bearing God',
-      label: '[V2] Talisman of Four Bearing God Lv5',
+      label: '[K] Talisman of Four Bearing God Lv5',
       value: 'Talisman of Four Bearing God==5',
       acd: 0,
       fct: 1.5,
@@ -339,6 +339,14 @@ export class SoulAscetic extends SoulReaper {
         m_element_neutral: lv * 4,
       })),
     },
+	{
+      name: 'Talisman of Magician',
+      label: 'Talisman of Magician',
+      inputType: 'dropdown',
+      dropdown: genSkillList(5, lv => ({
+        sMatk: lv * 2,
+      })),
+    },
     {
       name: '_SoulAscetic_Blessing',
       label: 'Blessing of',
@@ -374,6 +382,12 @@ export class SoulAscetic extends SoulReaper {
       label: 'Soul Mastery',
       inputType: 'dropdown',
       dropdown: genSkillList(10, lv => ({ spl: lv })),
+    },
+	{
+      name: 'Circle of Directions and Elementals',
+      label: 'Circle of 4 Directions',
+      inputType: 'dropdown',
+      dropdown: genSkillList(5),
     },
   ];
 

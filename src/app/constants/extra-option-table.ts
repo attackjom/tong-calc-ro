@@ -131,4 +131,7 @@ export const ExtraOptionTable = {
   Ear_Of_Flame_TH: 2,
   Ear_Of_Soul_TH: 2,
   Ear_Of_Abyss_TH: 3,
+ 
+  Gambler_Seal_KR_: 3,
+  //Spade_Ace_Melee: 2,
 } as const;
