@@ -189,9 +189,89 @@ export class Troubadour extends Minstrel {
         return (200 + skillLevel * 120 + status.totalCon * 3 * stageMannerLv) * (baseLevel / 100);
       },
     },
+	{
+      name: 'Metallic Fury',
+      label: '[K] Metallic Fury Lv5',
+      value: 'Metallic Fury==5',
+      acd: 0.5,
+      fct: 0,
+      vct: 0,
+      cd: 0.4,
+      totalHit: 1,
+	  isMatk: true,
+      verifyItemFn: ({ weapon }) => {
+        const requires: WeaponTypeName[] = ['bow', 'instrument', 'whip'];
+        if (requires.some(wType => weapon.isType(wType))) return '';
+
+        return requires.join(', ');
+      },
+      formula: (input: AtkSkillFormulaInput): number => {
+        const { model, skillLevel, status } = input;
+        const baseLevel = model.level;
+        const stageMannerLv = this.learnLv('Stage Manner');
+
+        if (this.isSkillActive('Sound Blend')) {
+			return (skillLevel * 3600 + status.totalSpl * 3 * stageMannerLv / 2) * (baseLevel / 100);
+		}
+        return (skillLevel * 2600 + status.totalSpl * 3 * stageMannerLv / 2) * (baseLevel / 100);
+      },
+    },
+	{
+      name: 'Rhythmical Wave',
+      label: '[K] Rhythmical Wave Lv5',
+      value: 'Rhythmical Wave==5',
+      acd: 1,
+      fct: 1,
+      vct: 2,
+      cd: 0.4,
+      totalHit: 1,
+	  isMatk: true,
+      verifyItemFn: ({ weapon }) => {
+        const requires: WeaponTypeName[] = ['bow', 'instrument', 'whip'];
+        if (requires.some(wType => weapon.isType(wType))) return '';
+
+        return requires.join(', ');
+      },
+      formula: (input: AtkSkillFormulaInput): number => {
+        const { model, skillLevel, status } = input;
+        const baseLevel = model.level;
+        const stageMannerLv = this.learnLv('Stage Manner');
+
+        if (this.isSkillActive('Mystic Symphony')) {
+			return (450 + skillLevel * 4650 + status.totalSpl * 3 * stageMannerLv / 2) * (baseLevel / 100);
+		}
+        return (250 + skillLevel * 3650 + status.totalSpl * 3 * stageMannerLv / 2) * (baseLevel / 100);
+      },
+    },
   ];
-  private readonly activeSkillList4th: ActiveSkillModel[] = [MysticSymphonyFn()];
-  private readonly passiveSkillList4th: PassiveSkillModel[] = [StageMannerFn()];
+  private readonly activeSkillList4th: ActiveSkillModel[] = [
+	{
+      inputType: 'selectButton',
+      label: 'Sound Blend',
+      name: 'Sound Blend',
+      dropdown: [
+        { label: 'Yes', value: 1, isUse: true },
+        { label: 'No', value: 0, isUse: false },
+      ],
+    },
+	MysticSymphonyFn()
+  ];
+  private readonly passiveSkillList4th: PassiveSkillModel[] = [
+	{
+      inputType: 'dropdown',
+      label: 'Sound Blend',
+      name: 'Sound Blend',
+      dropdown: [
+        { label: '-', isUse: false, value: 0 },
+        { label: 'Lv 1', isUse: true, value: 1 },
+        { label: 'Lv 2', isUse: true, value: 2 },
+        { label: 'Lv 3', isUse: true, value: 3 },
+        { label: 'Lv 4', isUse: true, value: 4 },
+        { label: 'Lv 5', isUse: true, value: 5 },
+      ],
+    },
+	StageMannerFn()
+  ];
 
   constructor() {
     super();

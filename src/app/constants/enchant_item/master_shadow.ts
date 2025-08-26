@@ -114,6 +114,7 @@ export const mShadowTVTB3 = [
   "TR_Soul_RB",
   "TR_Soul_RS",
   "TR_Soul_MF",
+  "TR_Soul_RW",
 ];
 
 export const mShadowAM3 = [
