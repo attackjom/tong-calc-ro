@@ -62,6 +62,7 @@ const ACTIVE_PASSIVE_SKILL_NAMES = [
   'Climax',
   'Cloaking Exceed',
   'Comet Amp',
+  'All Bloom lv4',
   'Crazy Uproar',
   'Cross Wound',
   'Current HP',

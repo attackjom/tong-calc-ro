@@ -317,7 +317,7 @@ export const JobBuffs: ActiveSkillModel[] = [
   // },
   {
     name: '_Trouvere_Troubadour_pAtk_sMatk',
-    label: '+ P.ATK S.Matk',
+    label: 'Troubadour/Trouvere Buff',
     inputType: 'dropdown',
     dropdown: [
       { label: '-', isUse: false, value: 0 },
@@ -358,6 +358,16 @@ export const JobBuffs: ActiveSkillModel[] = [
       // { label: 'Lv 4', value: 4, isUse: true, bonus: { oleumSanctum: 4 * 3 } },
       { label: 'Yes', value: 5, isUse: true, bonus: { oleumSanctum: 5 * 3 } },
       { label: 'No', value: 0, isUse: false },
+    ],
+  },
+  {
+    name: 'All Bloom lv4',
+    label: 'All Bloom lv4',
+    inputType: 'selectButton',
+    isDebuff: true,
+    dropdown: [
+      { label: 'Yes', isUse: true, value: 1, bonus: { comet: 100 } },
+      { label: 'No', isUse: false, value: 0 },
     ],
   },
   // {
