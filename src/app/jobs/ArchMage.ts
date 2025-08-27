@@ -165,7 +165,7 @@ export class ArchMage extends Warlock {
   private readonly atkSkillList4th: AtkSkillModel[] = [
     {
       name: 'Soul Vulcan Strike',
-      label: '[V3] Soul Vulcan Strike Lv5',
+      label: '[K] Soul Vulcan Strike Lv5',
       value: 'Soul Vulcan Strike==5',
       acd: 0.5,
       fct: 1,
@@ -179,7 +179,7 @@ export class ArchMage extends Warlock {
         const { totalSpl } = status;
         const { level: baseLevel } = model;
 
-        return (skillLevel * 250 + totalSpl * 3) * (baseLevel / 100);
+        return (skillLevel * 300 + totalSpl * 3) * (baseLevel / 100);
       }
     },
     {
@@ -279,7 +279,7 @@ export class ArchMage extends Warlock {
     },
     {
       name: 'Crimson Arrow',
-      label: '[V3] Crimson Arrow Lv5',
+      label: '[K] Crimson Arrow Lv5',
       value: 'Crimson Arrow==5',
       acd: 0.5,
       fct: 1.5,
@@ -291,10 +291,10 @@ export class ArchMage extends Warlock {
         const { model, skillLevel, status } = input;
         const { totalSpl } = status;
         const { level: baseLevel } = model;
-        const blimaxBonus = this.isSkillActive('Climax') ? 600 : 0;
+        const blimaxBonus = this.isSkillActive('Climax') ? 750 : 0;
 
-        const directDmg = floor((skillLevel * 300 + totalSpl * 3) * (baseLevel / 100));
-        const bomDmg = floor((skillLevel * (600 + blimaxBonus) + totalSpl * 5) * (baseLevel / 100));
+        const directDmg = floor((skillLevel * 400 + totalSpl * 3) * (baseLevel / 100));
+        const bomDmg = floor((skillLevel * (750 + blimaxBonus) + totalSpl * 5) * (baseLevel / 100));
 
         return directDmg + bomDmg;
       },

@@ -317,7 +317,7 @@ export const JobBuffs: ActiveSkillModel[] = [
   // },
   {
     name: '_Trouvere_Troubadour_pAtk_sMatk',
-    label: 'Troubadour/Trouvere Buff',
+    label: '+ P.ATK S.Matk',
     inputType: 'dropdown',
     dropdown: [
       { label: '-', isUse: false, value: 0 },
@@ -367,6 +367,33 @@ export const JobBuffs: ActiveSkillModel[] = [
     isDebuff: true,
     dropdown: [
       { label: 'Yes', isUse: true, value: 1, bonus: { comet: 100 } },
+      { label: 'No', isUse: false, value: 0 },
+    ],
+  },
+  {
+    name: 'Ep21 Race',
+    label: 'Ep21 Race +15%',
+    inputType: 'selectButton',
+    dropdown: [
+      { label: 'Yes', isUse: true, value: 1, bonus: { p_race_all: 15, m_race_all: 15 } },
+      { label: 'No', isUse: false, value: 0 },
+    ],
+  },
+  {
+    name: 'Ep21 ATK MATK',
+    label: 'Ep21 ATK/MATK 10%',
+    inputType: 'selectButton',
+    dropdown: [
+      { label: 'Yes', isUse: true, value: 1, bonus: { atkPercent: 10, matkPercent: 10 } },
+      { label: 'No', isUse: false, value: 0 },
+    ],
+  },
+  {
+    name: 'Ep21 Speed',
+    label: 'Ep21 Speed',
+    inputType: 'selectButton',
+    dropdown: [
+      { label: 'Yes', isUse: true, value: 1, bonus: { aspdPercent: 10, vct: 10 } },
       { label: 'No', isUse: false, value: 0 },
     ],
   },
