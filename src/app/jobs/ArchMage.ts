@@ -301,7 +301,7 @@ export class ArchMage extends Warlock {
     },
     {
       name: 'Frozen Slash',
-      label: '[V3] Frozen Slash Lv5',
+      label: '[K] Frozen Slash Lv5',
       value: 'Frozen Slash==5',
       acd: 0.5,
       fct: 1.5,
@@ -315,15 +315,15 @@ export class ArchMage extends Warlock {
         const { totalSpl } = status;
         const { level: baseLevel } = model;
         if (this.isSkillActive('Climax')) {
-          return (400 + skillLevel * 1250 + totalSpl * 5) * (baseLevel / 100);
+          return (600 + skillLevel * 1300 + totalSpl * 5) * (baseLevel / 100);
         }
 
-        return (250 + skillLevel * 900 + totalSpl * 5) * (baseLevel / 100);
+        return (450 + skillLevel * 950 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Storm Cannon',
-      label: '[V3] Storm Cannon Lv5',
+      label: '[K] Storm Cannon Lv5',
       value: 'Storm Cannon==5',
       acd: 0.5,
       fct: 1.5,
@@ -337,15 +337,15 @@ export class ArchMage extends Warlock {
         const { totalSpl } = status;
         const { level: baseLevel } = model;
         if (this.isSkillActive('Climax')) {
-          return (skillLevel * 1250 + totalSpl * 5) * (baseLevel / 100);
+          return (skillLevel * 1850 + totalSpl * 5) * (baseLevel / 100);
         }
 
-        return (skillLevel * 950 + totalSpl * 5) * (baseLevel / 100);
+        return (skillLevel * 1550 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Rock Down',
-      label: '[V3] Rock Down Lv5',
+      label: '[K] Rock Down Lv5',
       value: 'Rock Down==5',
       acd: 0.5,
       fct: 1.5,
@@ -359,15 +359,15 @@ export class ArchMage extends Warlock {
         const { totalSpl } = status;
         const { level: baseLevel } = model;
         if (this.isSkillActive('Climax')) {
-          return (skillLevel * 1250 + totalSpl * 5) * (baseLevel / 100);
+          return (skillLevel * 1850 + totalSpl * 5) * (baseLevel / 100);
         }
 
-        return (skillLevel * 950 + totalSpl * 5) * (baseLevel / 100);
+        return (skillLevel * 1550 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'All Bloom',
-      label: '[V3] All Bloom Lv5 (1 hit)',
+      label: '[K] All Bloom Lv5 (1 hit)',
       value: 'All Bloom==5',
       acd: 0.5,
       fct: 1.5,
@@ -379,14 +379,14 @@ export class ArchMage extends Warlock {
         const { model, skillLevel, status } = input;
         const { totalSpl } = status;
         const { level: baseLevel } = model;
-        const climaxBonus = this.activeSkillLv('Climax') === 3 ? 300 : 0;
+        //const climaxBonus = this.activeSkillLv('Climax') === 3 ? 300 : 0;
 
-        return (200 + skillLevel * 1200 + totalSpl * 5) * (baseLevel / 100) + climaxBonus;
+        return (200 + skillLevel * 1200 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     {
       name: 'Violent Quake',
-      label: '[V3] Violent Quake Lv5 (1 hit)',
+      label: '[K] Violent Quake Lv5 (1 hit)',
       value: 'Violent Quake==5',
       acd: 0.5,
       fct: 1.5,
@@ -398,9 +398,9 @@ export class ArchMage extends Warlock {
         const { model, skillLevel, status } = input;
         const { totalSpl } = status;
         const { level: baseLevel } = model;
-        const climaxBonus = this.activeSkillLv('Climax') === 3 ? 200 : 0;
+        //const climaxBonus = this.activeSkillLv('Climax') === 3 ? 200 : 0;
 
-        return (200 + skillLevel * 1200 + totalSpl * 5) * (baseLevel / 100) + climaxBonus;
+        return (200 + skillLevel * 1200 + totalSpl * 5) * (baseLevel / 100);
       },
     },
     // {
@@ -435,7 +435,7 @@ export class ArchMage extends Warlock {
         { label: '-', value: 0, isUse: false },
         { label: 'Lv 1', value: 1, isUse: true },
         { label: 'Lv 2', value: 2, isUse: true },
-        { label: 'Lv 3', value: 3, isUse: true },
+        { label: 'Lv 3', value: 3, isUse: true, bonus: { "All Bloom": 300, "Violent Quake": 200 }  },
         { label: 'Lv 4', value: 4, isUse: true },
         { label: 'Lv 5', value: 5, isUse: true },
       ],
