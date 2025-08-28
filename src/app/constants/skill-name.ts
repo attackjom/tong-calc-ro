@@ -351,7 +351,7 @@ export const OFFENSIVE_SKILL_NAMES = [
   'Cross Rain',
   'Cross Ripper Slasher',
   'Cross Slash',
-  'Cross Slash GX',
+  'Cross Slash SHC',
   'Curse Explosion',
   'Dark Claw',
   'Dark Illusion',
