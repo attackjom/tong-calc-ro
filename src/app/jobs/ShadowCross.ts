@@ -245,14 +245,39 @@ export class ShadowCross extends GuillotineCross {
       //   return input.damage * totalHit;
       // },
     },
-    {
-      name: 'Savage Impact',
-      label: '[V3] Savage Impact Lv5',
-      value: 'Savage Impact==5',
-      acd: 0.3,
+	{
+      name: 'Cross Slash SHC',
+      label: '[K] Cross Slash Lv5',
+      value: 'Cross Slash SHC==5',
+      acd: 0.7,
       fct: 0,
       vct: 0,
       cd: 1,
+      isMelee: true,
+      canCri: true,
+      baseCriPercentage: 0.5,
+      criDmgPercentage: 0.5,
+	  totalHit: 3,
+      formula: (input: AtkSkillFormulaInput): number => {
+        const { model, skillLevel, status } = input;
+        const { totalPow } = status;
+        const baseLevel = model.level;
+
+        if (this.isSkillActive('Shadow Exceed')) {
+          return (skillLevel * 360 + totalPow * 7) * (baseLevel / 100);
+        }
+
+        return (skillLevel * 300 + totalPow * 5) * (baseLevel / 100);
+      },
+    },
+    {
+      name: 'Savage Impact',
+      label: '[K] Savage Impact Lv10',
+      value: 'Savage Impact==10',
+      acd: 0.3,
+      fct: 0,
+      vct: 0,
+      cd: 0.7,
       isMelee: true,
       canCri: true,
       baseCriPercentage: 0.5,
@@ -274,10 +299,10 @@ export class ShadowCross extends GuillotineCross {
         const baseLevel = model.level;
 
         if (this.isSkillActive('Shadow Exceed')) {
-          return (skillLevel * 110 + totalPow * 7) * (baseLevel / 100);
+          return (skillLevel * 125 + totalPow * 7) * (baseLevel / 100);
         }
 
-        return (skillLevel * 90 + totalPow * 5) * (baseLevel / 100);
+        return (skillLevel * 105 + totalPow * 5) * (baseLevel / 100);
       },
     },
     {

@@ -660,6 +660,10 @@ export const OFFENSIVE_SKILL_NAMES = [
   'Powerful Swing',
   'Rush Strike',
   'Dragonic Pierce',
+  'Imperial Pressure',
+  'Hit and Sliding',
+  'Chasing Break',
+  'Chasing Shot',
   'Soul Gathering',
 ] as const;
 
