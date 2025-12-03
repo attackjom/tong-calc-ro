@@ -246591,7 +246591,7 @@
         "EQUIP[Shining Light Katar]GRADE[weapon==C]===0.5"
       ],
       "melee": [
-        "EQUIP[Shining Light Katar]===20"
+        "EQUIP[Shining Light Katar]GRADE[weapon==C]===20"
       ]
     }
   },
@@ -248097,7 +248097,7 @@
     "unidName": "Ring of Evil (Biolo)",
     "resName": "Scorpio_Ring_J",
     "unidResName": "Scorpio_Ring_J",
-    "description": "ATK + 100\nลด Global Cooldown 10%\nPOW + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Blood Rapier,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มี Grade C ขึ้นไป,\nCRI + 30,\nลด Cooldown สกิล Mayhemic Thorns 3.5 วินาที,\nเพิ่ม Damage สกิล Mayhemic Thorns 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเมื่อใช้งานสกิล Mayhemic Thorns มีโอกาส 30% ที่จะ Autospell สกิล Mayhemic Thorns Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nPOW + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Blood Rapier,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มี Grade C ขึ้นไป,\nCRI + 30,\nลด Cooldown สกิล Mayhemic Thorns 0.35 วินาที,\nเพิ่ม Damage สกิล Mayhemic Thorns 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเมื่อใช้งานสกิล Mayhemic Thorns มีโอกาส 30% ที่จะ Autospell สกิล Mayhemic Thorns Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 510,
@@ -248140,7 +248140,7 @@
         "EQUIP[Blood Rapier]REFINE[weapon==10]===15"
       ],
       "cd__Mayhemic Thorns": [
-        "EQUIP[Blood Rapier]GRADE[weapon==C]===0.5"
+        "EQUIP[Blood Rapier]GRADE[weapon==C]===0.35"
       ]
     }
   },
@@ -248518,6 +248518,76 @@
       ],
       "cd__First Brand": [
         "EQUIP[Good Spell]===1.5"
+      ]
+    }
+  },
+  "410492": {
+    "id": 410492,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Biosphere Observer",
+    "unidName": "Ribbon",
+    "resName": "옵저버",
+    "unidResName": "리본",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nแว่นตาที่ใช้สำหรับตรวจสอบข้อมูลของสิ่งมีชีวิตใน Biosphere\n\nลด Delay หลังใช้สกิล 5%\nATK +100, MATK +100\n\n[ความสามารถจำกัดเวลา]\nลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากมอนสเตอร์ใน Varmundt's Biosphere 30%,\nเพิ่ม Damange ทางกายภาพ/เวทย์มนตร์ต่อมอนสเตอร์ใน Varmundt's Biosphere 30%\n\nทุก ๆ Base STR 20, POW +1\nทุก ๆ Base AGI 20, STA +1\nทุก ๆ Base VIT 20, WIS +1\nทุก ๆ Base INT 20, SPL +1\nทุก ๆ Base DEX 20, CON +1\nทุก ๆ Base LUK 20, CRT +1\n\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%,\nลดระยะเวลาร่ายแบบคงที่ 0.3 วินาที\n\n^ff0000(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังสิ้นสุดระยะเวลากิจกรรม)^000000\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777720^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777230^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 230,
+    "attack": null,
+    "defense": 20,
+    "weight": 10,
+    "requiredLevel": 230,
+    "location": "Middle",
+    "compositionPos": null,
+    "script": {
+      "acd": [
+        "5"
+      ],
+      "atk": [
+        "100"
+      ],
+      "matk": [
+        "100"
+      ],
+      "pow": [
+        "SUM[str==20]---1"
+      ],
+      "sta": [
+        "SUM[agi==20]---1"
+      ],
+      "wis": [
+        "SUM[vit==20]---1"
+      ],
+      "spl": [
+        "SUM[int==20]---1"
+      ],
+      "con": [
+        "SUM[dex==20]---1"
+      ],
+      "crt": [
+        "SUM[luk==20]---1"
+      ],
+      "p_size_all": [
+        "10"
+      ],
+      "m_size_all": [
+        "10"
+      ],
+      "fct": [
+        "0.3"
+      ],
+      "p_final": [
+        "SPAWN[bl_grass]===30",
+        "SPAWN[bl_lava]===30",
+        "SPAWN[bl_ice]===30",
+        "SPAWN[bl_death]===30"
+      ],
+      "m_final": [
+        "SPAWN[bl_grass]===30",
+        "SPAWN[bl_lava]===30",
+        "SPAWN[bl_ice]===30",
+        "SPAWN[bl_death]===30"
       ]
     }
   }

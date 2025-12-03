@@ -5,7 +5,7 @@ import json
 import time
 import requests
 
-API_KEY = "8b7d2377989aa1e839940e81af2d9249"
+API_KEY = ""
 OUTPUT_FILE = "item_output.json"
 REQUEST_DELAY_SEC = 0.2  # small delay to be polite to the API
 

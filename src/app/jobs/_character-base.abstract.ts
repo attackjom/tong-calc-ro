@@ -243,6 +243,25 @@ export abstract class CharacterBase {
           return baseDamage * (baseLevel / 100);
         },
       });
+      skills.push({
+        name: 'Ignition Break',
+        label: 'Ignition Break Lv5',
+        value: 'Ignition Break==5',
+        values: ['[Improved 2nd] Ignition Break==5'],
+        acd: 0,
+        fct: 0,
+        vct: 1,
+        cd: 2,
+        isMelee: true,
+        canCri: true,
+        criDmgPercentage: 0.5,
+        formula: (input: AtkSkillFormulaInput): number => {
+          const { model, skillLevel } = input;
+          const baseLevel = model.level;
+
+          return skillLevel * 450 * (baseLevel / 100);
+        },
+      });
     }
     if (cName !== ClassName.ArchBishop && cName !== ClassName.Cardinal) {
       skills.push({
@@ -284,6 +303,24 @@ export abstract class CharacterBase {
         },
         finalDmgFormula: (input) => {
           return input.damage * input.skillLevel;
+        },
+      });
+      skills.push({
+        name: 'Comet',
+        label: 'Comet Lv5',
+        value: 'Comet==5',
+        acd: 1.5,
+        fct: 2,
+        vct: 10,
+        cd: 20,
+        isMatk: true,
+        hit: 10,
+        element: ElementType.Neutral,
+        formula: (input: AtkSkillFormulaInput): number => {
+          const { model, skillLevel } = input;
+          const baseLevel = model.level;
+
+          return (2500 + skillLevel * 700) * (baseLevel / 100);
         },
       });
     }

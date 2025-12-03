@@ -206,6 +206,18 @@ export class AppTopBarComponent implements OnInit, OnDestroy {
 
   updates: { v: string; date: string; logs: string[]; }[] = [
     {
+      v: 'Extra v38',
+      date: '03-12-2568',
+      logs: [
+        "เพิ่มไอเทม GGT 03/12/2025",
+        "เพิ่มสกิล Ignition Break Lv5 ให้ทุกอาชีพ",
+        "เพิ่มสกิล Comet Lv5 ให้ทุกอาชีพ",
+        "เพิ่มไอเทม Biosphere Observer",
+        "แก้บัคแหวน Ring of Good (Shadow Cross) เพิ่มตีใกล้ 20% แม้กาต้าจะยังไม่เกรด C",
+        "เพิ่มออฟ Nebula ให้เสื้อ Astraea Armor-LT",
+      ],
+    },
+    {
       v: 'Extra v37',
       date: '29-11-2568',
       logs: [
