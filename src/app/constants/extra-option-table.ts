@@ -94,7 +94,7 @@ export const ExtraOptionTable = {
   Overwhelm_Agi_Armor: 2,
   Overwhelm_Dex_Armor: 2,
 
-  Temporal_Armor_TW_LT: 2,
+  //Temporal_Armor_TW_LT: 2,
 
   DragonA_Red: 3,
   DragonA_Green: 3,

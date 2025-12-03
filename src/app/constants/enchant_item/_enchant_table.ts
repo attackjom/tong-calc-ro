@@ -1060,6 +1060,7 @@ export const EnchantTable: EntTable[] = [
   { name: 'Star_Robe_Of_Wis', enchants: [null, nebular2, nebular3, nebular4] },
 
   { name: 'Temporal_Armor_TW_LT', enchants: [null, nebular2, nebular3, nebular5] },
+  { name: 'Astraea_Armor_LT', enchants: [null, nebular2, nebular3, nebular5] },
 
   { name: 'Thanos_Helm1_LT', enchants: [null, null, thanosHead3, thanosHead4] },
   { name: 'Thanos_Helm2_LT', enchants: [null, null, thanosHead3, thanosHead4] },

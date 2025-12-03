@@ -6,6 +6,8 @@ import { addBonus, genSkillList, genSkillListWithLabel } from '../utils';
 import { Rebellion } from './Rebellion';
 import { ActiveSkillModel, AtkSkillFormulaInput, AtkSkillModel, PassiveSkillModel } from './_character-base.abstract';
 import { ClassName } from './_class-name';
+import { InfoForClass } from '../models/info-for-class.model';
+import { floor } from '../utils';
 
 const jobBonusTable: Record<number, [number, number, number, number, number, number]> = {
   1: [1, 0, 0, 0, 0, 0],
@@ -551,6 +553,15 @@ export class NightWatch extends Rebellion {
       inputType: 'dropdown',
       dropdown: genSkillListWithLabel(10, lv => (`${lv}`))
     },
+    {
+      label: 'Power (Good&Evil)',
+      name: 'Power',
+      inputType: 'dropdown',
+      dropdown: [
+        { label: '-', value: 0, isUse: false },
+        { label: 'Lv 4', value: 4, isUse: true },
+      ],
+    },
   ];
   private readonly passiveSkillList4th: PassiveSkillModel[] = [
     {
@@ -596,4 +607,19 @@ export class NightWatch extends Rebellion {
 
     return totalBonus;
   }
+
+  override modifyFinalAtk(currentAtk: number, _params: InfoForClass) {
+      const powerLv = this.bonuses.usedSkillMap.get('Power');
+  
+      let totalAtk = currentAtk;
+      if (powerLv >= 1) {
+        if (this.activeSkillLv('Skill Version') === 0) { // GGT
+          totalAtk = totalAtk + floor(totalAtk * (powerLv * 15 + 10) * 0.01);
+        }
+        else
+          totalAtk = totalAtk + floor(totalAtk * (powerLv * 20) * 0.01);
+      }
+  
+      return totalAtk;
+    }
 }

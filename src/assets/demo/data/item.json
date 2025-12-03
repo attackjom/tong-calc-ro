@@ -172893,7 +172893,7 @@
     "description": "ปากกาหมึกซึมที่ได้รับแรงบันดาลใจจากดวงดาวและพระจันทร์เปล่งประกายราวกับท้องฟ้ายามค่ำคืนที่เต็มไปด้วยเวทมนตร์\nเหมาะสำหรับนักผจญภัยผู้หลงใหลในความงามของจักรวาล\n\nMHP + 15000, MSP + 2000\nเพิกเฉยต่อ RES, MRES ของศัตรูทุกเผ่า 20%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 20%\n(ความสามารถพิเศษจะถูกลบออกหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 3 ธันวาคม 2568)\n\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Garment^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 9,
-    "itemSubTypeId": 522,
+    "itemSubTypeId": 9522,
     "itemLevel": null,
     "attack": null,
     "defense": 0,
@@ -247912,6 +247912,612 @@
       ],
       "m_class_boss": [
         "20"
+      ]
+    }
+  },
+  "410553": {
+    "id": 410553,
+    "aegisName": "Old_Moroc_Acc_LT",
+    "flavorText": null,
+    "name": "Ancient Morocc Noble Jewelry-LT [1]",
+    "unidName": null,
+    "resName": "다이아뎀",
+    "unidResName": null,
+    "description": "เมื่อ Base STR 120 ขึ้นไป, ATK + 100, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่อ Base AGI 120 ขึ้นไป, ASPD + 10%, Perfect HIT + 20%\nเมื่อ Base VIT 120 ขึ้นไป, MaxHP + 10%, RES + 50, MRES + 50\nเมื่อ Base INT 120 ขึ้นไป, MATK + 100, MATK + 15%\nเมื่อ Base DEX 120 ขึ้นไป, ATK + 100 , MATK + 100, เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่อ Base LUK 120 ขึ้นไป, CRI + 20, Critical Damage + 30%\n\nเมื่อสวมใส่ร่วมกับ Marduk Card,\nลด Global Cooldown 10%,\nAll Status 10,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 15%\n\nเมื่อสวมใส่ร่วมกับ Pharaoh Card,\nสามารถเห็นศัตรูที่ซ่อนตัวอยู่ได้,\nAll Trait Status + 10\nลด Global Cooldown 20%,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 30%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 1,
+    "requiredLevel": 100,
+    "location": "Lower",
+    "compositionPos": null,
+    "canGrade": false,
+    "script": {
+      "atk": [
+        "SUM[str==120]===100",
+        "SUM[dex==120]===100"
+      ],
+      "matk": [
+        "SUM[int==120]===100",
+        "SUM[dex==120]===100"
+      ],
+      "matkPercent": [
+        "SUM[int==120]===100"
+      ],
+      "melee": [
+        "SUM[str==120]===15"
+      ],
+      "aspdPercent": [
+        "SUM[agi==120]===10"
+      ],
+      "perfectHit": [
+        "SUM[agi==120]===20"
+      ],
+      "hpPercent": [
+        "SUM[vit==120]===10"
+      ],
+      "res": [
+        "SUM[vit==120]===50"
+      ],
+      "mres": [
+        "SUM[vit==120]===50"
+      ],
+      "range": [
+        "SUM[dex==120]===15"
+      ],
+      "cri": [
+        "SUM[luk==120]===20"
+      ],
+      "criDmg": [
+        "SUM[luk==120]===30"
+      ],
+      "allStatus": [
+        "EQUIP[Marduk Card]===10"
+      ],
+      "allTrait": [
+        "EQUIP[Pharaoh Card]===10"
+      ],
+      "p_element_all": [
+        "EQUIP[Marduk Card]===15",
+        "EQUIP[Pharaoh Card]===30"
+      ],
+      "m_element_all": [
+        "EQUIP[Marduk Card]===15",
+        "EQUIP[Pharaoh Card]===30"
+      ],
+      "acd": [
+        "EQUIP[Marduk Card]===10",
+        "EQUIP[Pharaoh Card]===20"
+      ]
+    }
+  },
+  "420383": {
+    "id": 420383,
+    "aegisName": "C_Sparkly_Rainbow_Hair",
+    "flavorText": null,
+    "name": "Costume Festa Rainbow Hair",
+    "unidName": "Ribbon",
+    "resName": "C_Sparkly_Rainbow_Hair",
+    "unidResName": "리본",
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nทรงผมที่รวบรวมความสุขและความประทับใจของผู้เข้าร่วมงาน Ragnarok Festa ปี 2025\n\nสามารถใช้งานสกิล Comet Lv.5 ได้,\nลด Cooldown สกิล Comet 20 วินาที,\nลดระยะเวลาร่ายแบบคงที่ 1 วินาที\n\n(ความสามารถของไอเท็มชิ้นนี้จะถูกลบหลังปิดปรับปรุงเซิร์ฟเวอร์วันที่ 21 มกราคม 2569)\nประเภท : ^777777Costume^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 9,
+    "itemSubTypeId": 521,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "script": {
+      "cd__Comet": [
+        "20"
+      ]
+    }
+  },
+  "490856": {
+    "id": 490856,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Evil (Spirit Handler) [1]",
+    "unidName": "Ring of Evil (Spirit Handler)",
+    "resName": "Scorpio_Ring_J",
+    "unidResName": "Scorpio_Ring_J",
+    "description": "MATK + 100\nลด Global Cooldown 10%\nSPL + 10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Darkness Foxtail Model,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Hyunrok Cannon, Hyunrok Breeze 15%\n\nเมื่อ Darkness Foxtail Model มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Hyunrok Cannon, Hyunrok Breeze 15%\n\nเมื่อ Darkness Foxtail Model มี Grade C ขึ้นไป,\nMATK + 15%,\nลด Cooldown สกิล Hyunrok Breeze 2 วินาที,\nเพิ่ม Damage สกิล Hyunrok Cannon, Hyunrok Breeze 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nลด Cooldown สกิล Hyunrok Breeze 0.5 วินาที,\nS.MATK + 10,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 20%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": false,
+    "usableClass": [
+      "SpiritHandler"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Darkness Foxtail Model]===15"
+      ],
+      "Hyunrok Cannon": [
+        "EQUIP[Darkness Foxtail Model]===15",
+        "EQUIP[Darkness Foxtail Model]REFINE[weapon==10]===15",
+        "EQUIP[Darkness Foxtail Model]GRADE[weapon==C]===20"
+      ],
+      "Hyunrok Breeze": [
+        "EQUIP[Darkness Foxtail Model]===15",
+        "EQUIP[Darkness Foxtail Model]REFINE[weapon==10]===15",
+        "EQUIP[Darkness Foxtail Model]GRADE[weapon==C]===20"
+      ],
+      "m_element_all": [
+        "EQUIP[Darkness Foxtail Model]REFINE[weapon==10]===15"
+      ],
+      "matkPercent": [
+        "EQUIP[Darkness Foxtail Model]GRADE[weapon==C]===15"
+      ],
+      "cd__Hyunrok Breeze": [
+        "EQUIP[Darkness Foxtail Model]GRADE[weapon==C]===2",
+        "EQUIP[Evil Spell]===0.5"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490857": {
+    "id": 490857,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Evil (Biolo) [1]",
+    "unidName": "Ring of Evil (Biolo)",
+    "resName": "Scorpio_Ring_J",
+    "unidResName": "Scorpio_Ring_J",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nPOW + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Blood Rapier,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Mayhemic Thorns 15%\n\nเมื่อ Blood Rapier มี Grade C ขึ้นไป,\nCRI + 30,\nลด Cooldown สกิล Mayhemic Thorns 3.5 วินาที,\nเพิ่ม Damage สกิล Mayhemic Thorns 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเมื่อใช้งานสกิล Mayhemic Thorns มีโอกาส 30% ที่จะ Autospell สกิล Mayhemic Thorns Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Biolo"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Blood Rapier]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Blood Rapier]===15"
+      ],
+      "Mayhemic Thorns": [
+        "EQUIP[Blood Rapier]===15",
+        "EQUIP[Blood Rapier]REFINE[weapon==10]===15",
+        "EQUIP[Blood Rapier]GRADE[weapon==C]===20"
+      ],
+      "p_element_all": [
+        "EQUIP[Blood Rapier]REFINE[weapon==10]===15"
+      ],
+      "cd__Mayhemic Thorns": [
+        "EQUIP[Blood Rapier]GRADE[weapon==C]===0.5"
+      ]
+    }
+  },
+  "490858": {
+    "id": 490858,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Good (Night Watch) [1]",
+    "unidName": "Ring of Good (Night Watch)",
+    "resName": "RK은반지",
+    "unidResName": "RK은반지",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nCON + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Last Dawn,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Spiral Shooting, Only One Bullet 15%\n\nเมื่อ Last Dawn มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Spiral Shooting, Only One Bullet 15%\n\nเมื่อ Last Dawn มี Grade C ขึ้นไป, \nCRI + 30,\nลด Cooldown สกิล Spiral Shooting, Only One Bullet 0.35 วินาที\nเพิ่ม Damage สกิล Spiral Shooting, Only One Bullet 20%\n\n———————————————————————\n\nเมื่อสวมใส่ร่วมกับ Devil Hunter หรือ Lightning Splatter,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%, \nเพิ่ม Damage สกิล Magazine for One 15%\n \nเมื่อ Devil Hunter หรือ Lightning Splatter มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Magazine for One 15%\n \nเมื่อ Devil Hunter หรือ Lightning Splatter มี Grade C ขึ้นไป,\nCRI + 30,\nลด Cooldown สกิล Magazine for One 0.35 วินาที,\nเพิ่ม Damage สกิล Magazine for One 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเมื่อใช้งานสกิล Spiral Shooting มีโอกาส 30% ที่จะ Autospell สกิล Spiral Shooting Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด),\nเมื่อใช้งานสกิล Magazine for One มีโอกาส 30% ที่จะ Autospell สกิล Magazine for One Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายตามเลเวลสูงสุด)\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Last Dawn]GRADE[weapon==C]===30",
+        "EQUIP[Devil Hunter]GRADE[weapon==C]===30",
+        "EQUIP[Lightning Splatter]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Last Dawn]===15",
+        "EQUIP[Devil Hunter]===15",
+        "EQUIP[Lightning Splatter]===15"
+      ],
+      "Spiral Shooting": [
+        "EQUIP[Last Dawn]===15",
+        "EQUIP[Last Dawn]REFINE[weapon==10]===15",
+        "EQUIP[Last Dawn]GRADE[weapon==C]===20"
+      ],
+      "Only One Bullet": [
+        "EQUIP[Last Dawn]===15",
+        "EQUIP[Last Dawn]REFINE[weapon==10]===15",
+        "EQUIP[Last Dawn]GRADE[weapon==C]===20"
+      ],
+      "Magazine for One": [
+        "EQUIP[Devil Hunter]===15",
+        "EQUIP[Devil Hunter]REFINE[weapon==10]===15",
+        "EQUIP[Devil Hunter]GRADE[weapon==C]===20",
+        "EQUIP[Lightning Splatter]===15",
+        "EQUIP[Lightning Splatter]REFINE[weapon==10]===15",
+        "EQUIP[Lightning Splatter]GRADE[weapon==C]===20"
+      ],
+      "p_element_all": [
+        "EQUIP[Last Dawn]REFINE[weapon==10]===15",
+        "EQUIP[Devil Hunter]REFINE[weapon==10]===15",
+        "EQUIP[Lightning Splatter]REFINE[weapon==10]===15"
+      ],
+      "cd__Spiral Shooting": [
+        "EQUIP[Last Dawn]GRADE[weapon==C]===0.35"
+      ],
+      "cd__Only One Bullet": [
+        "EQUIP[Last Dawn]GRADE[weapon==C]===0.35"
+      ],
+      "cd__Magazine for One": [
+        "EQUIP[Devil Hunter]GRADE[weapon==C]===0.35",
+        "EQUIP[Lightning Splatter]GRADE[weapon==C]===0.35"
+      ]
+    }
+  },
+  "490859": {
+    "id": 490859,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Good (Night Watch II) [1]",
+    "unidName": "Ring of Good (Night Watch II)",
+    "resName": "RK은반지",
+    "unidResName": "RK은반지",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nCON + 10\nATK + 6%\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Lord of Glory หรือ Justice Bomber,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล The Vigilante at Night, Wild Fire 15%\n \nเมื่อ  Lord of Glory หรือ Justice Bomber มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล The Vigilante at Night, Wild Fire 15%\n \nเมื่อ  Lord of Glory หรือ Justice Bomber มี Grade C ขึ้นไป,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nลด Cooldown สกิล The Vigilante at Night, Wild Fire 0.35 วินาที,\nเพิ่ม Damage สกิล The Vigilante at Night, Wild Fire 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nสามารถใช้งานสกิล Power Lv.4 ได้,\nเมื่อโจมตีทางกายภาพ มีโอกาส 4% ที่จะได้รับสถานะ [Good Spell Power] เป็นเวลา 10 วินาที\n\nผลเอฟเฟกต์ [Good Spell Power]\nCON + 50,\nP.ATK + 10,\nสูญเสีย HP 500 หน่วยต่อวินาที\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "NightWatch"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "atkPercent": [
+        "6"
+      ],
+      "acd": [
+        "10"
+      ],
+      "con": [
+        "10"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Lord of Glory]===15",
+        "EQUIP[Justice Bomber]===15"
+      ],
+      "The Vigilante at Night": [
+        "EQUIP[Lord of Glory]===15",
+        "EQUIP[Lord of Glory]REFINE[weapon==10]===15",
+        "EQUIP[Lord of Glory]GRADE[weapon==C]===20",
+        "EQUIP[Justice Bomber]===15",
+        "EQUIP[Justice Bomber]REFINE[weapon==10]===15",
+        "EQUIP[Justice Bomber]GRADE[weapon==C]===20"
+      ],
+      "Wild Fire": [
+        "EQUIP[Justice Bomber]===15",
+        "EQUIP[Justice Bomber]REFINE[weapon==10]===15",
+        "EQUIP[Justice Bomber]GRADE[weapon==C]===20",
+        "EQUIP[Lord of Glory]===15",
+        "EQUIP[Lord of Glory]REFINE[weapon==10]===15",
+        "EQUIP[Lord of Glory]GRADE[weapon==C]===20"
+      ],
+      "p_element_all": [
+        "EQUIP[Lord of Glory]REFINE[weapon==10]===15",
+        "EQUIP[Justice Bomber]REFINE[weapon==10]===15"
+      ],
+      "cd__The Vigilante at Night": [
+        "EQUIP[Lord of Glory]GRADE[weapon==C]===0.35",
+        "EQUIP[Justice Bomber]GRADE[weapon==C]===0.35"
+      ],
+      "cd__Wild Fire": [
+        "EQUIP[Justice Bomber]GRADE[weapon==C]===0.35",
+        "EQUIP[Lord of Glory]GRADE[weapon==C]===0.35"
+      ],
+      "range": [
+        "EQUIP[Lord of Glory]GRADE[weapon==C]===20",
+        "EQUIP[Justice Bomber]GRADE[weapon==C]===20"
+      ],
+      "chance__con": [
+        "EQUIP[Good Spell]===50"
+      ],
+      "chance__pAtk": [
+        "EQUIP[Good Spell]===10"
+      ]
+    }
+  },
+  "490840": {
+    "id": 490860,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Evil (Shinkiro&Shiranui) [1]",
+    "unidName": "Ring of Evil (Shinkiro&Shiranui)",
+    "resName": "Scorpio_Ring_J",
+    "unidResName": "Scorpio_Ring_J",
+    "description": "MATK + 100\nลด Global Cooldown 10%\nSPL + 10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Devil Claw,\nเพิ่ม Damage ทางทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Darkening Cannon, Red Flame Cannon 15%\n\nเมื่อ Devil Claw มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Darkening Cannon, Red Flame Cannon 15%\n\nเมื่อ Devil Claw มี Grade C ขึ้นไป\nMATK + 15%,\nลด Cooldown สกิล Darkening Cannon 0.35 วินาที,\nลด Cooldown สกิล Red Flame Cannon 0.5 วินาที,\nเพิ่ม Damage สกิล Darkening Cannon, Red Flame Cannon 20%\n\nเมื่อสวมใส่ร่วมกับ Evil Spell,\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Shadow 10%,\nS.MATK + 10,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 20%\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Shinkiro, Shiranui^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": false,
+    "usableClass": [
+      "Shinkiro",
+      "Shiranui"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Devil Claw]===15"
+      ],
+      "Darkening Cannon": [
+        "EQUIP[Devil Claw]===15",
+        "EQUIP[Devil Claw]REFINE[weapon==10]===15",
+        "EQUIP[Devil Claw]GRADE[weapon==C]===20"
+      ],
+      "Red Flame Cannon": [
+        "EQUIP[Devil Claw]===15",
+        "EQUIP[Devil Claw]REFINE[weapon==10]===15",
+        "EQUIP[Devil Claw]GRADE[weapon==C]===20"
+      ],
+      "m_element_all": [
+        "EQUIP[Devil Claw]REFINE[weapon==10]===15"
+      ],
+      "matkPercent": [
+        "EQUIP[Devil Claw]GRADE[weapon==C]===15"
+      ],
+      "cd__Darkening Cannon": [
+        "EQUIP[Devil Claw]GRADE[weapon==C]===0.35"
+      ],
+      "cd__Red Flame Cannon": [
+        "EQUIP[Devil Claw]GRADE[weapon==C]===0.5"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_my_element_dark": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_my_element_fire": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490861": {
+    "id": 490861,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Good (Elemental Master) [1]",
+    "unidName": "Ring of Good (Elemental Master)",
+    "resName": "RK은반지",
+    "unidResName": "RK은반지",
+    "description": "MATK + 100\nลด Global Cooldown 10%\nSPL + 10\nลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Blessed Bible,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล Diamond Storm, Terra Drive 15%\n\nเมื่อ Blessed Bible มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล Diamond Storm, Terra Drive 15%\n\nเมื่อ Blessed Bible มี Grade C ขึ้นไป,\nMATK + 15%,\nลด Cooldown สกิล Diamond Storm, Terra Drive 0.5 วินาที,\nเพิ่ม Damage สกิล Diamond Storm, Terra Drive 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nสามารถใช้งานสกิล Mystical Amplification Lv.5 ได้\nS.MATK + 10\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกเผ่า 20%\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Elemental Master^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": false,
+    "usableClass": [
+      "ElementalMaster"
+    ],
+    "script": {
+      "matk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "spl": [
+        "10"
+      ],
+      "fct": [
+        "0.5"
+      ],
+      "m_class_all": [
+        "15"
+      ],
+      "m_size_all": [
+        "EQUIP[Blessed Bible]===15"
+      ],
+      "Diamond Storm": [
+        "EQUIP[Blessed Bible]===15",
+        "EQUIP[Blessed Bible]REFINE[weapon==10]===15",
+        "EQUIP[Blessed Bible]GRADE[weapon==C]===20"
+      ],
+      "Terra Drive": [
+        "EQUIP[Blessed Bible]===15",
+        "EQUIP[Blessed Bible]REFINE[weapon==10]===15",
+        "EQUIP[Blessed Bible]GRADE[weapon==C]===20"
+      ],
+      "m_element_all": [
+        "EQUIP[Blessed Bible]REFINE[weapon==10]===15"
+      ],
+      "matkPercent": [
+        "EQUIP[Blessed Bible]GRADE[weapon==C]===15"
+      ],
+      "cd__Diamond Storm": [
+        "EQUIP[Blessed Bible]GRADE[weapon==C]===0.5"
+      ],
+      "cd__Terra Drive": [
+        "EQUIP[Blessed Bible]GRADE[weapon==C]===0.5"
+      ],
+      "sMatk": [
+        "EQUIP[Evil Spell]===10"
+      ],
+      "m_race_all": [
+        "EQUIP[Evil Spell]===20"
+      ]
+    }
+  },
+  "490862": {
+    "id": 490862,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Ring of Good (Inquisitor) [1]",
+    "unidName": "Ring of Good (Inquisitor)",
+    "resName": "RK은반지",
+    "unidResName": "RK은반지",
+    "description": "ATK + 100\nลด Global Cooldown 10%\nPOW + 10\nCRI + 15\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 15%\n \nเมื่อสวมใส่ร่วมกับ Punish Scepter,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 15%,\nเพิ่ม Damage สกิล First Brand, Third Punish 15%\n\nเมื่อ Punish Scepter มีขั้นอัพเกรดตั้งแต่ 10 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%,\nเพิ่ม Damage สกิล First Brand, Third Punish 15%\n\nเมื่อ Punish Scepter มี Grade C ขึ้นไป,\nCRI + 30,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nเพิ่ม Damage สกิล First Brand, Third Punish 20%\n\nเมื่อสวมใส่ร่วมกับ Good Spell,\nเพิ่ม Cooldown สกิล First Brand 1.5 วินาที,\nเมื่อใช้งานสกิล First Brand จะ Autospell สกิล Second Faith Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด)\nเมื่อใช้งานสกิล Second Faith จะ Autospell สกิล Third Punish Lv.1 (เมื่อเรียนรู้สกิลในเลเวลที่สูงกว่า จะร่ายในเลเวลสูงสุด)\n\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777215^000000\nอาชีพที่ใส่ได้ : ^777777Inquisitor^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 215,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Inquisitor"
+    ],
+    "script": {
+      "atk": [
+        "100"
+      ],
+      "acd": [
+        "10"
+      ],
+      "pow": [
+        "10"
+      ],
+      "cri": [
+        "15",
+        "EQUIP[Punish Scepter]GRADE[weapon==C]===30"
+      ],
+      "p_class_all": [
+        "15"
+      ],
+      "p_size_all": [
+        "EQUIP[Punish Scepter]===15"
+      ],
+      "First Brand": [
+        "EQUIP[Punish Scepter]===15",
+        "EQUIP[Punish Scepter]REFINE[weapon==10]===15",
+        "EQUIP[Punish Scepter]GRADE[weapon==C]===20"
+      ],
+      "Third Punish": [
+        "EQUIP[Punish Scepter]===15",
+        "EQUIP[Punish Scepter]REFINE[weapon==10]===15",
+        "EQUIP[Punish Scepter]GRADE[weapon==C]===20"
+      ],
+      "p_element_all": [
+        "EQUIP[Punish Scepter]REFINE[weapon==10]===15"
+      ],
+      "melee": [
+        "EQUIP[Punish Scepter]GRADE[weapon==C]===20"
+      ],
+      "cd__First Brand": [
+        "EQUIP[Good Spell]===1.5"
       ]
     }
   }
