@@ -1,14 +1,14 @@
-import { delay13, ea35, ef35, em35, fatal24, sp35 } from "./_basic"
+import { ea35, ef35, em35, fs35, sp25, fatal14 } from "./_basic"
 
-export const whiteKnight34 = [
+export const fallenlt3 = [
   ...ef35,
   ...ea35,
   ...em35,
-  ...sp35,
-  ...fatal24,
-  ...delay13,
+  ...fs35,
+  ...sp25,
+  ...fatal14,
 ]
-export const whiteKnight2 = [
+export const fallenlt2 = [
   // "Spirit_Of_Star_01_CN",
   // "Spirit_Of_Star_02_CN",
   // "Spirit_Of_Star_03_CN",
@@ -16,19 +16,22 @@ export const whiteKnight2 = [
   "Spirit_Of_Star_05_CN",
   "Spirit_Of_Star_06_CN",
   "Spirit_Of_Star_07_CN",
-  ...whiteKnight34
+  ...ea35,
+  ...fs35,
+  ...sp25,
+  ...fatal14,
 ]
-export const whiteKnight4 = [
+export const fallenlt4 = [
   ...ef35,
   ...ea35,
   ...em35,
-  ...sp35,
-  ...fatal24,
-  ...delay13,
   'Neev_STR_1',
   'Neev_AGI_1',
   'Neev_INT_1',
   'Neev_VIT_1',
   'Neev_DEX_1',
   'Neev_LUK_1',
+  ...fs35,
+  ...sp25,
+  ...fatal14,
 ]

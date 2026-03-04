@@ -2090,7 +2090,13 @@ export class RoCalculatorComponent implements OnInit, OnDestroy {
             });
             accCardList.push(item);
             continue;
-          case CardPosition.Acc:
+          case CardPosition.All:
+            weaponCardList.push(item);
+            headCardList.push(item);
+            shieldCardList.push(item);
+            garmentCardList.push(item);
+            armorCardList.push(item);
+            bootCardList.push(item);
             accLeftCardList.push(item);
             accRightCardList.push(item);
             accCardList.push(item);

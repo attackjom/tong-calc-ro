@@ -8,4 +8,5 @@ export enum CardPosition {
   Acc = 136,
   AccL = 128,
   AccR = 8,
+  All = 1021,
 }

@@ -139,7 +139,7 @@ import { traitShadow3, traitShadow4 } from './trait_shadow';
 import { unkWatch2, unkWatch34 } from './unknown_watch';
 import { corruptedPoisonArmor2, corruptedPoisonArmor3, corruptedPoisonArmor4, fieryEarthArmor2, fieryEarthArmor3, fieryEarthArmor4, flameRuneArmor2, icyStromArmor2, icyStromArmor3, icyStromArmor4, soulPurifyArmor2, soulPurifyArmor3, soulPurifyArmor4, varmundt3, varmundt4, varmundtAcc3, varmundtAcc4, varmundtHiAcc2 } from './varmundt';
 import { vivatusHead3, vivatusHead4 } from './vivatus';
-import { whiteKnight2, whiteKnight34 } from './white_knigh_man';
+import { whiteKnight2, whiteKnight34, whiteKnight4 } from './white_knigh_man';
 import { yorscalpAcc2, yorscalpAcc3, yorscalpAcc4, yorscalpArmor2, yorscalpArmor3, yorscalpArmor4, yorscalpBoot2, yorscalpBoot3, yorscalpBoot4, yorscalpGarment2, yorscalpGarment3, yorscalpGarment4, yorscalpHeadUpper2, yorscalpHeadUpper3, yorscalpHeadUpper4 } from './yorscalp';
 import { ch1Armor2, ch1Armor3, ch1Armor4, ch1Boot2, ch1Boot3, ch1Boot4, ch1Garment2, ch1Garment3, ch1Garment4, ch1DimenBoot2, ch1DimenBoot3, ch1DimenBoot4 } from './chapter1';
 import { snowfox3, snowfox4 } from './snowfox';
@@ -148,6 +148,7 @@ import { type_c_LT2, type_c_LT3, type_c_LT4 } from './type_c_lt';
 import { dim_ring_LT4, dim_ring_LT3 } from './dim_glacier_ring';
 import { snow_shadow2, snow_shadow3, snow_shadow4 } from './snow_shadow';
 import { luckyringLT2, luckyringLT3, luckyringLT4 } from './lucky_ring';
+import { fallenlt2, fallenlt3, fallenlt4 } from './fallen_angel_lt';
 
 enum TimeJewel {
   Str2 = 'aegis_313347',
@@ -1682,7 +1683,8 @@ export const EnchantTable: EntTable[] = [
   { name: "WK_Mantle_Melee_TH", enchants: [null, whiteKnight2, whiteKnight34, whiteKnight34] },
   { name: "WK_Mantle_Range_TH", enchants: [null, whiteKnight2, whiteKnight34, whiteKnight34] },
   { name: "WK_Mantle_Magic_TH", enchants: [null, whiteKnight2, whiteKnight34, whiteKnight34] },
-  { name: "WK_Mantle_All_TH_LT", enchants: [null, whiteKnight2, whiteKnight34, whiteKnight34] },
+  { name: "WK_Mantle_All_TH_LT", enchants: [null, whiteKnight2, whiteKnight34, whiteKnight4] },
+  { name: "Fallen_Angel_Wing_LT", enchants: [null, fallenlt2, fallenlt3, fallenlt4] },
 
   { name: "aegis_Kankrai", enchants: [null, rockPaperScissor, rockPaperScissor, rockPaperScissor] },
   { name: "aegis_Khon", enchants: [null, rockPaperScissor, rockPaperScissor, rockPaperScissor] },
@@ -1878,6 +1880,9 @@ export const EnchantTable: EntTable[] = [
   { name: "MT_Dim_Ring_TH", enchants: [null, ['DimAcc_MT'], dim_ring_LT3, dim_ring_LT4] },
   { name: "TR_Dim_Ring_TH", enchants: [null, ['DimAcc_TR'], dim_ring_LT3, dim_ring_LT4] },
   { name: "AG_Dim_Ring_TH", enchants: [null, ['DimAcc_AG'], dim_ring_LT3, dim_ring_LT4] },
+  { name: "SHC_Dim_Ring_TH", enchants: [null, ['DimAcc_SHC'], dim_ring_LT3, dim_ring_LT4] },
+  { name: "DK_Dim_Ring_TH", enchants: [null, ['DimAcc_DK'], dim_ring_LT3, dim_ring_LT4] },
+  { name: "SS_Dim_Ring_TH", enchants: [null, ['DimAcc_SS'], dim_ring_LT3, dim_ring_LT4] },
 
   { name: "S_BP9_Melee_A", enchants: [null, snow_shadow2, snow_shadow3, snow_shadow4] },
   { name: "S_BP9_Melee_S", enchants: [null, snow_shadow2, snow_shadow3, snow_shadow4] },

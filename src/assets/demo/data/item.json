@@ -47838,10 +47838,12 @@
   "24754": {
     "id": 24754,
     "aegisName": "S_M_Spell_Shield",
+    "flavorText": null,
     "name": "Magical Spell Shadow Shield",
     "unidName": "Shadow Shield",
     "resName": "쉴드쉐도우",
-    "description": "SPL + 1 per 2 refine rate.\nIf refine rate is 7 or higher, S.Matk + 3.\nIf refine rate is 9 or higher, additional S.Matk + 3.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "unidResName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nทุก ๆ การอัพเกรด 2 ขั้น SPL + 1\nเมื่ออัพเกรดถึงขั้น 7, S.MATK + 3\nเมื่ออัพเกรดถึงขั้น 9, S.MATK + 3 เพิ่มเติม\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 527,
@@ -48003,10 +48005,12 @@
   "24759": {
     "id": 24759,
     "aegisName": "S_Stamina_Weapon",
+    "flavorText": null,
     "name": "Stamina Shadow Weapon",
     "unidName": "Shadow Weapon",
     "resName": "웨폰쉐도우",
-    "description": "STA + 1 per refine rate.\nIf refine rate is 7 or higher, Res + 30.\nIf refine rate is 9 or higher, additional Res + 30.\nWhen equipped with Stamina Shadow Shield, Res + 30.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "unidResName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nทุก ๆ การอัพเกรด 1 ขั้น STA + 1\nเมื่ออัพเกรดถึงขั้น 7, RES + 30\nเมื่ออัพเกรดถึงขั้น 9, RES + 30 เพิ่มเติม\n \nเมื่อสวมใส่ร่วมกับ Stamina Shadow Shield, RES + 30\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 280,
@@ -48034,10 +48038,12 @@
   "24760": {
     "id": 24760,
     "aegisName": "S_Stamina_Shield",
+    "flavorText": null,
     "name": "Stamina Shadow Shield",
     "unidName": "Shadow Shield",
     "resName": "쉴드쉐도우",
-    "description": "STA + 1 per refine rate.\nIf refine rate is 7 or higher, Res + 30.\nIf refine rate is 9 or higher, additional Res + 30.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "unidResName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nทุก ๆ การอัพเกรด 1 ขั้น STA + 1\nเมื่ออัพเกรดถึงขั้น 7, RES + 30\nเมื่ออัพเกรดถึงขั้น 9, RES + 30 เพิ่มเติม\nประเภท : ^777777Shadow Equipment^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 0,
     "itemTypeId": 10,
     "itemSubTypeId": 527,
@@ -123940,10 +123946,12 @@
   "312447": {
     "id": 312447,
     "aegisName": "Justice_Vigor_BO",
+    "flavorText": null,
     "name": "Good Vigor (Biolo)",
     "unidName": "Good Vigor (Biolo)",
     "resName": "C_160LV_Mechanic_Gold",
-    "description": "When equipped with Good Spell,\r\nincreases Explosive Powder damage by 30%,\r\nincreases melee physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).",
+    "unidResName": "C_160LV_Mechanic_Gold",
+    "description": "เมื่อสวมใส่ร่วมกับ Good Spell,\nเพิ่ม Damage สกิล Explosive Powder 30%, เพิ่ม Damage ทางกายภาพระยะใกล้ 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -123972,10 +123980,12 @@
   "312448": {
     "id": 312448,
     "aegisName": "Injustice_Vigor_BO",
+    "flavorText": null,
     "name": "Evil Vigor (Biolo)",
     "unidName": "Evil Vigor (Biolo)",
     "resName": "C_160LV_Warlock_Violet",
-    "description": "When equipped with Evil Spell,\r\nincreases Mayhemic Thorns damage by 30%,\r\nincreases critical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).",
+    "unidResName": "C_160LV_Warlock_Violet",
+    "description": "เมื่อสวมใส่ร่วมกับ Evil Spell,\nเพิ่ม Damage สกิล Mayhemic Thorns 30%, Critical Damage + 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -124068,10 +124078,12 @@
   "312451": {
     "id": 312451,
     "aegisName": "Justice_Vigor_SH",
+    "flavorText": null,
     "name": "Good Vigor (Spirit Handler)",
     "unidName": "Good Vigor (Spirit Handler)",
     "resName": "C_160LV_Mechanic_Gold",
-    "description": "When equipped with Good Spell,\r\nincreases Chulho Sonic Claw damage by 20%,\r\nincreases Hogogong Strike damage by 40%,\r\nincreases physical damage against all property enemies by 20%,\r\nCri + 5.",
+    "unidResName": "C_160LV_Mechanic_Gold",
+    "description": "เมื่อสวมใส่ร่วมกับ Good Spell,\nเพิ่ม Damage สกิล Chulho Sonic Claw 20%, เพิ่ม Damage สกิล Hogogong Strike 40%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, CRI + 5",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -124100,10 +124112,12 @@
   "312452": {
     "id": 312452,
     "aegisName": "Injustice_Vigor_SH",
+    "flavorText": null,
     "name": "Evil Vigor (Spirit Handler)",
     "unidName": "Evil Vigor (Spirit Handler)",
     "resName": "C_160LV_Warlock_Violet",
-    "description": "When equipped with Evil Spell,\r\nincreases Hyunrok Cannon damage by 20%,\r\nincreases Hyunrok Breeze damage by 40%,\r\nincreases magical damage against all property enemies by 20%,\r\nreduces variable casting time by 5%.",
+    "unidResName": "C_160LV_Warlock_Violet",
+    "description": "เมื่อสวมใส่ร่วมกับ Evil Spell,\nเพิ่ม Damage สกิล Hyunrok Cannon 20%, เพิ่ม Damage สกิล Hyunrok Breeze 40%, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 20%, ลดระยะเวลาร่ายแบบแปรผัน 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -132538,10 +132552,12 @@
   "312805": {
     "id": 312805,
     "aegisName": "Justice_Vigor_NW",
+    "flavorText": "",
     "name": "Good Vigor (Night Watch)",
     "unidName": "Good Vigor (Night Watch)",
     "resName": "C_160LV_Mechanic_Gold",
-    "description": "When equipped with Good Spell and Crown of Good and Evil (Night Watch - Rifle),\r\nincreases Spiral shooting damage by 20%,\r\nincreases Only One Bullet damage by 40%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).\r\n\r\nWhen equipped with Good Spell and Crown of Good and Evil (Night Watch - Shotgun),\r\nincreases The Vigilante at Night damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nreduces global cooldown by 5%.\r\n\r\nWhen equipped with Good Spell and Crown of Good and Evil (Night Watch - Gatling Gun),\r\nincreases Magazine for One damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nreduces global cooldown by 5%.\r\n\r\nWhen equipped with Good Spell and Crown of Good and Evil (Night Watch - Revolver),\r\nincreases Magazine for One damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nCri + 5.\r\n\r\nWhen equipped with Good Spell and Crown of Good and Evil (Night Watch - Grenade Launcher),\r\nincreases Wild Fire damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).",
+    "unidResName": "C_160LV_Mechanic_Gold",
+    "description": "เมื่อสวมใส่ร่วมกับ Good Spell และ Crown of Good and Evil (Night Watch - Rifle), \nเพิ่ม Damage สกิล Spiral Shooting 20%, เพิ่ม Damage สกิล Only One Bullet 40%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%\n \nเมื่อสวมใส่ร่วมกับ Good Spell และ Crown of Good and Evil (Night Watch - Shotgun), \nเพิ่ม Damage สกิล The Vigilante at Night 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลด Global Cooldown 5%\n \nเมื่อสวมใส่ร่วมกับ Good Spell และ Crown of Good and Evil (Night Watch - Gatling Gun), \nเพิ่ม Damage สกิล Magazine for One 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลด Global Cooldown 5%\n \nเมื่อสวมใส่ร่วมกับ Good Spell และ Crown of Good and Evil (Night Watch - Revolver), \nเพิ่ม Damage สกิล Magazine for One 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, CRI + 5\n \nเมื่อสวมใส่ร่วมกับ Good Spell และ Crown of Good and Evil (Night Watch - Grenade Launcher), \nเพิ่ม Damage สกิล Wild Fire 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -132598,10 +132614,12 @@
   "312806": {
     "id": 312806,
     "aegisName": "Injustice_Vigor_NW",
+    "flavorText": "",
     "name": "Evil Vigor (Night Watch)",
     "unidName": "Evil Vigor (Night Watch)",
     "resName": "C_160LV_Warlock_Violet",
-    "description": "When equipped with Evil Spell and Crown of Good and Evil (Night Watch - Rifle),\r\nincreases Hasty Fire in the Hole damage by 20%,\r\nincreases Grenades Dropping damage by 40%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).\r\n\r\nWhen equipped with Evil Spell and Crown of Good and Evil (Night Watch - Shotgun),\r\nincreases Wild Fire damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).\r\n\r\nWhen equipped with Evil Spell and Crown of Good and Evil (Night Watch - Gatling Gun),\r\nincreases The Vigilante at Night damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nreduces global cooldown by 5%.\r\n\r\nWhen equipped with Evil Spell and Crown of Good and Evil (Night Watch - Revolver),\r\nincreases Only One Bullet damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nincreases attack speed (reduces delay after attack by 5%).\r\n\r\nWhen equipped with Evil Spell and Crown of Good and Evil (Night Watch - Grenade Launcher),\r\nincreases Spiral Shooting damage by 30%,\r\nincreases long ranged physical damage by 20%,\r\nincreases physical damage against all property enemies by 20%,\r\nreduces global cooldown by 5%.",
+    "unidResName": "C_160LV_Warlock_Violet",
+    "description": "เมื่อสวมใส่ร่วมกับ Evil Spell และ Crown of Good and Evil (Night Watch - Rifle), \nเพิ่ม Damage สกิล Hasty Fire in the Hole 20%, เพิ่ม Damage สกิล Grenades Dropping 40%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%\n \nเมื่อสวมใส่ร่วมกับ Evil Spell และ Crown of Good and Evil (Night Watch - Shotgun), \nเพิ่ม Damage สกิล Wild Fire 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%\n \nเมื่อสวมใส่ร่วมกับ Evil Spell และ Crown of Good and Evil (Night Watch - Gatling Gun), \nเพิ่ม Damage สกิล The Vigilante at Night 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลด Global Cooldown 5%\n \nเมื่อสวมใส่ร่วมกับ Evil Spell และ Crown of Good and Evil (Night Watch - Revolver), \nเพิ่ม Damage สกิล Only One Bullet 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ASPD + 5%\n \nเมื่อสวมใส่ร่วมกับ Evil Spell และ Crown of Good and Evil (Night Watch - Grenade Launcher), \nเพิ่ม Damage สกิล Spiral Shooting 30%, เพิ่ม Damage ทางกายภาพระยะไกล 20%, เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 20%, ลด Global Cooldown 5%",
     "slots": 0,
     "itemTypeId": 11,
     "itemSubTypeId": 0,
@@ -167941,10 +167959,12 @@
   "470210": {
     "id": 470210,
     "aegisName": "FateSin_Boots_BO",
-    "name": "Boots of Good and Evil (Biolo) [1]",
+    "flavorText": "선악의 힘이 담겨 있는 부츠.",
+    "name": "Good & Evil Boots (Biolo) [1]",
     "unidName": "Shoes",
     "resName": "FateSin_Boots_BO",
-    "description": "MaxHP + 500, MaxSP + 100.\r\nEvery 2 refine rate, MaxHP + 1%, MaxSP + 1%.\r\nIf refine rate is 7 or higher, Atk + 7%.\r\nIf refine rate is 9 or higher, increases melee / long ranged physical damage by 10%.\r\nIf refine rate is 11 or higher, reduces fixed casting time by 0.5 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Res + 50, Mres + 50.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] P.Atk + 7, S.Matk + 7.\r\n[Grade A] Reduces fixed casting time by 0.5 seconds.\r\nClass: ^777777Shoes^000000  Defense: ^77777720^000000\r\nWeight: ^77777760^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777210^000000\r\nJobs: ^777777Biolo^000000",
+    "unidResName": "슈즈",
+    "description": "รองเท้าที่แฝงพลังของธรรมะและอธรรมอยู่\n \nMHP + 500, MSP + 100\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%, MSP + 1%.\nเมื่ออัพเกรดถึงขั้น 7, ATK + 7%.\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะใกล้/ไกล 10%\nเมื่ออัพเกรดถึงขั้น 11, ลดดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] RES + 50, MRES + 50\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] P.ATK + 7, S.MATK + 7\n[Grade A] ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777760^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777Biolo^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 516,
@@ -168069,10 +168089,12 @@
   "470212": {
     "id": 470212,
     "aegisName": "FateSin_Boots_SH",
-    "name": "Boots of Good and Evil (Spirit Handler) [1]",
+    "flavorText": "선악의 힘이 담겨 있는 부츠.",
+    "name": "Good & Evil Boots (Spirit Handler) [1]",
     "unidName": "Shoes",
     "resName": "FateSin_Boots_SH",
-    "description": "MaxHP + 500, MaxSP + 100.\r\nEvery 2 refine rate, MaxHP + 1%, MaxSP + 1%.\r\nIf refine rate is 7 or higher, Atk + 7%, Matk + 7%.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, reduces fixed casting time by 0.5 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Res + 50, Mres + 50.\r\n[Grade C] Increases physical and magical damage against all size enemies by 10%.\r\n[Grade B] P.Atk + 7, S.Matk + 7.\r\n[Grade A] Reduces fixed casting time by 0.5 seconds.\r\nClass: ^777777Shoes^000000  Defense: ^77777720^000000\r\nWeight: ^77777760^000000\r\nArmor Level: ^7777772^000000\r\nRequired Level: ^777777210^000000\r\nJobs: ^777777Spirit Handler^000000",
+    "unidResName": "슈즈",
+    "description": "รองเท้าที่แฝงพลังของธรรมะและอธรรมอยู่\n \nMHP + 500, MSP + 100\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%, MSP + 1%\nเมื่ออัพเกรดถึงขั้น 7, ATK, MATK + 7%\nเมื่ออัพเกรดถึงขั้น 9, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] RES + 50, MRES + 50\n[Grade C] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] P.ATK + 7, S.MATK + 7\n[Grade A] ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777760^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^777777210^000000\nอาชีพที่ใส่ได้ : ^777777Spirit Handler^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 516,
@@ -168872,10 +168894,12 @@
   "470238": {
     "id": 470238,
     "aegisName": "FateSin_Boots_NW",
-    "name": "Boots of Good and Evil (Night Watch) [1]",
+    "flavorText": "",
+    "name": "Good & Evil Boots (Night Watch) [1]",
     "unidName": "Shoes",
     "resName": "FateSin_Boots_NW",
-    "description": "MaxHP + 500, MaxSP + 100.\r\nEvery 2 refine rate, MaxHP + 1%, MaxSP + 1%.\r\nIf refine rate is 7 or higher, Atk + 7%.\r\nIf refine rate is 9 or higher, increases long ranged physical damage by 10%.\r\nIf refine rate is 11 or higher, reduces fixed casting time by 0.5 seconds.\r\n\r\n^CC3D3D[Bonus by grade]^000000\r\n[Grade D] Res + 50, Mres + 50.\r\n[Grade C] Increases physical damage against all size enemies by 10%.\r\n[Grade B] P.Atk + 7, S.Matk + 7.\r\n[Grade A] Reduces fixed casting time by 0.5 seconds.\r\nClass: ^777777Shoes^000000  Defense: ^77777720^000000\r\nWeight: ^77777760^000000\r\nRequired Level: ^777777210^000000\r\nArmor Level: ^7777772^000000\r\nJobs: ^777777Night Watch^000000",
+    "unidResName": "슈즈",
+    "description": "รองเท้าที่แฝงพลังของธรรมะและอธรรมอยู่\n \nMHP + 500, MSP + 100\nทุก ๆ การอัพเกรด 2 ขั้น MHP + 1%, MSP + 1%\nเมื่ออัพเกรดถึงขั้น 7, ATK + 7%\nเมื่ออัพเกรดถึงขั้น 9, เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่ออัพเกรดถึงขั้น 11, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\n \n^CC3D3D[Option เพิ่มเติมตาม Grade]^000000\n[Grade D] RES + 50, MRES + 50\n[Grade C] เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n[Grade B] P.ATK + 7, S.MATK + 7\n[Grade A] ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777720^000000\nน้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777210^000000\nเลเวล Armor : ^7777772^000000\nอาชีพที่ใส่ได้ : ^777777Night Watch^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 516,
@@ -251344,6 +251368,648 @@
       ],
       "vct__Dragonic Breath": [
         "EQUIP[Dim Glacier Two-handed Sword||Dim Glacier Lance]GRADE[weapon==C]REFINE[weapon==12]===100"
+      ]
+    }
+  },
+  "420236": {
+    "id": 420236,
+    "aegisName": "Moroc_Slave_TW",
+    "flavorText": null,
+    "name": "Loyal Servant of Demon God Morocc",
+    "unidName": null,
+    "resName": "소년모로크수하",
+    "unidResName": null,
+    "description": "P.ATK+5, S.MATK+5,\nเพิ่ม Damage ต่อศัตรูเผ่า Demi-Human, Player, Angel 5%\nลด Damage ที่ได้รับจากศัตรูเผ่า Demi-Human, Player, Angel  3%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Force 3,\nเพิ่ม Damage ทางกายภาพระยะใกล้ 20%,\nเพิ่ม Damage ที่ได้รับจากศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Intelligence 3,\nเพิ่ม Damage ทางเวทมนตร์ทุกธาตุ 20%,\nเพิ่ม Damage ที่ได้รับจากศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Speed 3,\nลด Global Cooldown 10%,\nMaxHP - 20%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Concentration 3,\nเพิ่ม Damage ทางกายภาพระยะไกล 20%,\nเพิ่ม Damage ที่ได้รับจากศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Vitality 3,\nMaxHP+30%,\nASPD - 50%\n\nเมื่อสวมใส่ร่วมกับ Dark Lord Essence Luck 3,\nCritical Damage + 20%, เพิ่มปริมาณ Heal 20%,\nเพิ่ม Global Cooldown 10%,\n\nเมื่อสวมใส่ร่วมกับ Apostle Shnaim of Morroc Card,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 15%\n\nเมื่อสวมใส่ร่วมกับ Apostle Ahat of Morroc Card,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 15%\n\nเมื่อสวมใส่ร่วมกับ Morroc of Despair Card,\nMaxHP + 50%,\nเพิ่ม Damage ทางกายภาพต่อศัตรูเผ่า 40%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777710^000000\nเลเวล Armor : ^7777771^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": "Lower",
+    "compositionPos": null,
+    "canGrade": false,
+    "script": {
+      "pAtk": [
+        "5"
+      ],
+      "sMatk": [
+        "5"
+      ],
+      "p_race_demihuman": [
+        "5"
+      ],
+      "p_race_angel": [
+        "5"
+      ],
+      "m_race_demihuman": [
+        "5"
+      ],
+      "m_race_angel": [
+        "5"
+      ],
+      "melee": [
+        "EQUIP[Dark Lord Essence Force 3]===20"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Dark Lord Essence Intelligence 3]===20"
+      ],
+      "acd": [
+        "EQUIP[Dark Lord Essence Speed 3]===10",
+        "EQUIP[Dark Lord Essence Luck 3]===-10"
+      ],
+      "hpPercent": [
+        "EQUIP[Dark Lord Essence Speed 3]===-20",
+        "EQUIP[Dark Lord Essence Vitality 3]===30",
+        "EQUIP[Morroc of Despair Card]===50"
+      ],
+      "range": [
+        "EQUIP[Dark Lord Essence Concentration 3]===20"
+      ],
+      "criDmg": [
+        "EQUIP[Dark Lord Essence Luck 3]===20"
+      ],
+      "aspdPercent": [
+        "EQUIP[Dark Lord Essence Vitality 3]===-50"
+      ],
+      "p_race_all": [
+        "EQUIP[Apostle Shnaim of Morroc Card]===15",
+        "EQUIP[Morroc of Despair Card]===40"
+      ],
+      "m_race_all": [
+        "EQUIP[Apostle Shnaim of Morroc Card]===15"
+      ],
+      "p_size_all": [
+        "EQUIP[Apostle Ahat of Morroc Card]===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Apostle Ahat of Morroc Card]===15"
+      ]
+    }
+  },
+  "4922": {
+    "id": 4922,
+    "aegisName": "Artful3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Concentration 3",
+    "unidName": "Dark Lord Essence Concentration 3",
+    "resName": "집중",
+    "unidResName": "집중",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nDEX +4\nอัตราความแม่นยำ +8\nLUK -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "dex": [
+        "4"
+      ],
+      "hit": [
+        "8"
+      ],
+      "luk": [
+        "-4"
+      ]
+    }
+  },
+  "4910": {
+    "id": 4910,
+    "aegisName": "Force3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Force 3",
+    "unidName": "Dark Lord Essence Force 3",
+    "resName": "완력",
+    "unidResName": "완력",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nSTR +4\nATK +12\nINT -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "str": [
+        "4"
+      ],
+      "atk": [
+        "12"
+      ],
+      "int": [
+        "-4"
+      ]
+    }
+  },
+  "4913": {
+    "id": 4913,
+    "aegisName": "Intellect3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Intelligence 3",
+    "unidName": "Dark Lord Essence Intelligence 3",
+    "resName": "지력",
+    "unidResName": "지력",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nINT +4\nMATK +12\nSTR -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "int": [
+        "4"
+      ],
+      "matk": [
+        "12"
+      ],
+      "str": [
+        "-4"
+      ]
+    }
+  },
+  "4925": {
+    "id": 4925,
+    "aegisName": "Fortune3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Luck 3",
+    "unidName": "Dark Lord Essence Luck 3",
+    "resName": "행운",
+    "unidResName": "행운",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nLUK +4\nCritical +4\nDEX -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "luk": [
+        "4"
+      ],
+      "cri": [
+        "4"
+      ],
+      "dex": [
+        "-4"
+      ]
+    }
+  },
+  "4916": {
+    "id": 4916,
+    "aegisName": "Swiftness3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Speed 3",
+    "unidName": "Dark Lord Essence Speed 3",
+    "resName": "신속",
+    "unidResName": "신속",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nAGI +4\nอัตราหลบหลีก +8\nVIT -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "agi": [
+        "4"
+      ],
+      "flee": [
+        "8"
+      ],
+      "vit": [
+        "-4"
+      ]
+    }
+  },
+  "4919": {
+    "id": 4919,
+    "aegisName": "Tough3",
+    "flavorText": null,
+    "name": "Dark Lord Essence Vitality 3",
+    "unidName": "Dark Lord Essence Vitality 3",
+    "resName": "체력",
+    "unidResName": "체력",
+    "description": "สกัดจากปีศาจ Morocc มีสกิลบางส่วนของ Morocc อยู่\nVIT +4\nDEF +12\nMDEF +8\nAGI -4\n^ff0000 หมายเหตุ: นี่เป็น Enchant ไอเทมพิเศษ จึงไม่มีอยู่ใน Card's Slot^000000\nติดตั้ง: ^777777ทุก Slot ที่มี^000000\nน้ำหน้ก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 1021,
+    "script": {
+      "vit": [
+        "4"
+      ],
+      "def": [
+        "12"
+      ],
+      "mdef": [
+        "8"
+      ],
+      "agi": [
+        "-4"
+      ]
+    }
+  },
+  "420759": {
+    "id": 420759,
+    "aegisName": "Reaper_Of_Tomb_LT",
+    "flavorText": null,
+    "name": "Reaper Of Tomb-LT",
+    "unidName": "Mask",
+    "resName": "사신님의가호",
+    "unidResName": "마스크",
+    "description": "เมื่อสวมใส่วิญญาณอันชั่วร้ายจะปกคลุมรอบตัว ดูเหมือนมันจะเฝ้าคอยแย่งชิงจิตวิญญาณผู้สวมใส่\n\nทุก ๆ Base Lv.3,\nเพิ่ม Damage สกิล Ignition Break, Earth Drive, Cross Impact,\nTriangle Shot, Axe Tornado, Arm Cannon, Cart Cannon,\nVaretyr Spear, Comet, Focus Arrow Strike, Severe Rainstorm,\nJudex, Rampage Blast 1%\n\nเมื่อสวมใส่ร่วมกับ Raven of Tomb-LT,\nเพิ่ม Damage สกิล Dragonic Breath, Overslash, Mystery Illusion,\nVenom Swamp, Spark Blaster, Explosive Powder,\nEternal Slash, Abyss Square, Arbitrium, Explosion Blaster,\nGale Storm, Rhythm Shooting, Star Cannon, Exorcism of Malicious Soul, Shadow Flash, Red Flame Cannon,\nMagazine for One, Chulho Sonic Claw, Jupitel Thunderstorm 25%\n\nทุก ๆ Base STR 10, เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nทุก ๆ Base AGI 10, ลด Global Cooldown 1%\nทุก ๆ Base VIT 10, MHP + 1%, ASPD + 1%\nทุก ๆ Base INT 10, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 1%\nทุก ๆ Base DEX 10, เพิ่ม Damage ทางกายภาพระยะไกล 1%\nทุก ๆ Base LUK 10, ATK + 6, MATK + 6\nเมื่อผลรวมของค่า Status พื้นฐานทั้งหมด 600 ขึ้นไป, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 15%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^77777760^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 60,
+    "requiredLevel": 100,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "Ignition Break": [
+        "level:3---1"
+      ],
+      "Earth Drive": [
+        "level:3---1"
+      ],
+      "Cross Impact": [
+        "level:3---1"
+      ],
+      "Triangle Shot": [
+        "level:3---1"
+      ],
+      "Axe Tornado": [
+        "level:3---1"
+      ],
+      "Arm Cannon": [
+        "level:3---1"
+      ],
+      "Cart Cannon": [
+        "level:3---1"
+      ],
+      "Varetyr Spear": [
+        "level:3---1"
+      ],
+      "Comet": [
+        "level:3---1"
+      ],
+      "Focused Arrow Strike": [
+        "level:3---1"
+      ],
+      "Severe Rainstorm": [
+        "level:3---1"
+      ],
+      "Judex": [
+        "level:3---1"
+      ],
+      "Rampage Blast": [
+        "level:3---1"
+      ],
+      "melee": [
+        "EQUIP[Raven Of Tomb]SUM[str==10]---1"
+      ],
+      "acd": [
+        "EQUIP[Raven Of Tomb]SUM[agi==10]---1"
+      ],
+      "hpPercent": [
+        "EQUIP[Raven Of Tomb]SUM[vit==10]---1"
+      ],
+      "aspdPercent": [
+        "EQUIP[Raven Of Tomb]SUM[vit==10]---1"
+      ],
+      "m_size_all": [
+        "EQUIP[Raven Of Tomb]SUM[int==10]---1"
+      ],
+      "range": [
+        "EQUIP[Raven Of Tomb]SUM[dex==10]---1"
+      ],
+      "atk": [
+        "EQUIP[Raven Of Tomb]SUM[luk==10]---6"
+      ],
+      "matk": [
+        "EQUIP[Raven Of Tomb]SUM[luk==10]---6"
+      ],
+      "p_class_all": [
+        "EQUIP[Raven Of Tomb]SUM[str,agi,vit,int,dex,luk==600]===15"
+      ],
+      "m_class_all": [
+        "EQUIP[Raven Of Tomb]SUM[str,agi,vit,int,dex,luk==600]===15"
+      ],
+      "Dragonic Breath": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Overslash": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Mystery Illusion": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Venom Swamp": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Spark Blaster": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Explosive Powder": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Eternal Slash": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Abyss Square": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Arbitrium": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Explosion Blaster": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Gale Storm": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Rhythm Shooting": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Star Cannon": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Exorcism of Malicious Soul": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Shadow Flash": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Red Flame Cannon": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Magazine for One": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Chulho Sonic Claw": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ],
+      "Jupitel Thunderstorm": [
+        "EQUIP[Raven of Tomb-LT]===25"
+      ]
+    }
+  },
+  "470424": {
+    "id": 470424,
+    "aegisName": null,
+    "flavorText": null,
+    "name": "Aladdin Shoes [1]",
+    "unidName": null,
+    "resName": "Cancer_Shoes",
+    "unidResName": null,
+    "description": "^ff0000ไอเท็มนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nรองเท้าพิเศษที่เมื่ออัปเกรดถึงระดับที่กำหนด สามารถนำไปแลกของรางวัลกับ Aladdiny ได้ภายในช่วงระยะเวลากิจกรรม\n\nATK, MATK + 30\nลด Global Cooldown 5%\n\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ทุกเผ่า 1%\n\nเมื่ออัพเกรดถึงขั้น 7, ATK + 5%, MATK + 5%\nเมื่ออัพเกรดถึงขั้น 9, ASPD + 10%, ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเมื่ออัพเกรดถึงขั้น 11, เพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ทุกเผ่า 5%, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกเผ่า 10%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] POW, CON, SPL + 10\n[Grade C] ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.3 วินาที, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%\n[Grade B] เพิ่มค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ทุกเผ่า 5%\n[Grade A] ลดระยะเวลาร่ายแบบคงที่ลงอีก 0.2 วินาที, P.ATK, S.MATK + 15\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^7777771^000000\nเลเวล Armor : ^7777772^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": 2,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "script": {
+      "atk": [
+        "30"
+      ],
+      "matk": [
+        "30"
+      ],
+      "acd": [
+        "5"
+      ],
+      "atkPercent": [
+        "7===5"
+      ],
+      "matkPercent": [
+        "7===5"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "fct": [
+        "9===0.5",
+        "GRADE[me==C]===0.3",
+        "GRADE[me==A]===0.2"
+      ],
+      "p_race_all": [
+        "11===10"
+      ],
+      "m_race_all": [
+        "11===10"
+      ],
+      "pow": [
+        "GRADE[me==D]===10"
+      ],
+      "con": [
+        "GRADE[me==D]===10"
+      ],
+      "spl": [
+        "GRADE[me==D]===10"
+      ],
+      "p_size_all": [
+        "GRADE[me==C]===10"
+      ],
+      "m_size_all": [
+        "GRADE[me==C]===10"
+      ],
+      "pAtk": [
+        "GRADE[me==A]===15"
+      ],
+      "sMatk": [
+        "GRADE[me==A]===15"
+      ]
+    }
+  },
+  "480760": {
+    "id": 480760,
+    "aegisName": "Fallen_Angel_Wing_LT",
+    "flavorText": null,
+    "name": "Fallen Angel Wing-LT [1]",
+    "unidName": null,
+    "resName": "타락천사의날개",
+    "unidResName": null,
+    "description": "ปีกนางฟ้าขนาดใหญ่สีดำของนางฟ้าตกสวรรค์\nAll Trait + 5\n\nทุก ๆ Base STR 20, ATK + 10, P.ATK + 3\nทุก ๆ Base INT 20, MATK + 10, S.MATK + 3\nทุก ๆ Base VIT 20, เพิ่มความต้านทานต่อ Damage ธาตุ Neutral 5%, RES/MRES + 30\nทุก ๆ Base AGI 20, ASPD + 3%, ลด Global Cooldown 3%\nทุก ๆ Base DEX 20, เพิ่ม Damage ระยะใกล้/ไกล 3%, ลดระยะเวลาร่ายแบบแปรผัน 3%\nทุก ๆ Base LUK 20, Critical Damage + 3%, ATK, MATK + 8\n\nเมื่อขั้นอัพเกรดตั้งแต่ 12 ขึ้นไป,\nเพิ่ม Damage สกิล Dragonic Breath, Overslash, Mystery Illusion,\nVenom Swamp, Spark Blaster, Explosive Powder,\nEternal Slash, Abyss Square, Arbitrium, Explosion Blaster,\nGale Storm, Rhythm Shooting, Star Cannon, Exorcism of Malicious Soul, Shadow Flash\nRed Flame Cannon, Magazine for One, Chulho Sonic Claw, Jupitel Thunderstorm 25%\n\n[Option เพิ่มเติมตาม Grade]\n[Grade D] ทุก ๆ การอัพเกรด 2 ขั้น POW + 2, SPL + 2 CON + 2\n[Grade C] ทุก ๆ การอัพเกรด 2 ขั้น Perfect Hit + 12%, MATK + 2%\n[Grade B] เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกธาตุ 12%\n[Grade A] ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที, DEF + 150, MDEF + 25\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777718^000000\nน้ำหนัก : ^77777720^000000\nเลเวล Armor : ^7777772^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": 2,
+    "attack": null,
+    "defense": 18,
+    "weight": 20,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "canGrade": true,
+    "script": {
+      "allTraits": [
+        "5"
+      ],
+      "atk": [
+        "str:20---10",
+        "luk:20---8"
+      ],
+      "pAtk": [
+        "str:20---3"
+      ],
+      "matk": [
+        "int:20---10",
+        "luk:20---8"
+      ],
+      "sMatk": [
+        "int:20---3"
+      ],
+      "res": [
+        "vit:20---30"
+      ],
+      "mres": [
+        "vit:20---30"
+      ],
+      "acd": [
+        "agi:20---3"
+      ],
+      "aspdPercent": [
+        "agi:20---3"
+      ],
+      "melee": [
+        "dex:20---3"
+      ],
+      "range": [
+        "dex:20---3"
+      ],
+      "vct": [
+        "dex:20---3"
+      ],
+      "criDmg": [
+        "luk:20---3"
+      ],
+      "Dragonic Breath": [
+        "12===25"
+      ],
+      "Overslash": [
+        "12===25"
+      ],
+      "Mystery Illusion": [
+        "12===25"
+      ],
+      "Venom Swamp": [
+        "12===25"
+      ],
+      "Spark Blaster": [
+        "12===25"
+      ],
+      "Explosive Powder": [
+        "12===25"
+      ],
+      "Eternal Slash": [
+        "12===25"
+      ],
+      "Abyss Square": [
+        "12===25"
+      ],
+      "Arbitrium": [
+        "12===25"
+      ],
+      "Explosion Blaster": [
+        "12===25"
+      ],
+      "Gale Storm": [
+        "12===25"
+      ],
+      "Rhythm Shooting": [
+        "12===25"
+      ],
+      "Star Cannon": [
+        "12===25"
+      ],
+      "Exorcism of Malicious Soul": [
+        "12===25"
+      ],
+      "Shadow Flash": [
+        "12===25"
+      ],
+      "Red Flame Cannon": [
+        "12===25"
+      ],
+      "Magazine for One": [
+        "12===25"
+      ],
+      "Chulho Sonic Claw": [
+        "12===25"
+      ],
+      "Jupitel Thunderstorm": [
+        "12===25"
+      ],
+      "pow": [
+        "GRADE[me==D]2---2"
+      ],
+      "spl": [
+        "GRADE[me==D]2---2"
+      ],
+      "con": [
+        "GRADE[me==D]2---2"
+      ],
+      "perfectHit": [
+        "GRADE[me==C]2---12"
+      ],
+      "matkPercent": [
+        "GRADE[me==C]2---2"
+      ],
+      "p_element_all": [
+        "GRADE[me==B]===12"
+      ],
+      "m_element_all": [
+        "GRADE[me==B]===12"
+      ],
+      "fct": [
+        "GRADE[me==A]===0.5"
+      ],
+      "def": [
+        "GRADE[me==A]===150"
+      ],
+      "mdef": [
+        "GRADE[me==A]===25"
       ]
     }
   }
