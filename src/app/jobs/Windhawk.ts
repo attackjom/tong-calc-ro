@@ -397,15 +397,4 @@ export class Windhawk extends Ranger {
 
     return totalBonus;
   }
-
-  // override modifyFinalAtk(currentAtk: number, params: InfoForClass): number {
-  //   const {totalBonus, skillName, monster} = params;
-  //   const {race, elementUpper} = monster;
-
-  //   if (this.isSkillActive('Calamity Gale') && (skillName === 'Crescive Bolt' || skillName === 'Gale Storm')) {
-  //     if (race === '' || elementUpper === ElementType.Water) {
-
-  //     }
-  //   }
-  // }
 }

@@ -498,7 +498,7 @@ export class Shinkiro extends Kagerou {
       inputType: 'dropdown',
       dropdown: [
         { label: '-', value: 0, isUse: false },
-        { label: 'Lv 4', value: 4, isUse: true },
+        { label: 'Lv 4', value: 4, isUse: true, bonus: { advKatarPower: 80 } },
       ],
     },
   ];
@@ -589,16 +589,5 @@ export class Shinkiro extends Kagerou {
       passiveSkillList: this.passiveSkillList4th,
       classNames: this.classNames4th,
     });
-  }
-
-  override modifyFinalAtk(currentAtk: number, _params: InfoForClass) {
-    const powerLv = this.bonuses.usedSkillMap.get('Power');
-
-    let totalAtk = currentAtk;
-    if (powerLv >= 1) {
-      totalAtk = totalAtk + floor(totalAtk * (powerLv * 20) * 0.01);
-    }
-
-    return totalAtk;
   }
 }

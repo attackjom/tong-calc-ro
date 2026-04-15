@@ -351,15 +351,4 @@ export class Cardinal extends ArchBishop {
 
     return totalBonus;
   }
-
-  override modifyFinalAtk(currentAtk: number, _params: InfoForClass) {
-    const powerLv = this.bonuses.usedSkillMap.get('Power');
-
-    let totalAtk = currentAtk;
-    if (powerLv >= 1) {
-      totalAtk = totalAtk + floor(totalAtk * (powerLv * 20) * 0.01);
-    }
-
-    return totalAtk;
-  }
 }

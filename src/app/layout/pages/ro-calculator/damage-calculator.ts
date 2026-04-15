@@ -300,7 +300,7 @@ export class DamageCalculator {
 
     if (propertyAtk === ElementType.Poison)
       return (this.totalBonus['vi'] || 0);
-  
+
     return 0;
   }
 
@@ -416,10 +416,10 @@ export class DamageCalculator {
     return this.toPercent(totalBonus || 100);
   }
 
-  private getAdvanceKatar() {
-    if (this.weaponData.data.typeName !== 'katar') return 0;
+  private getAdvanceKatarPower() {
+    //if (this.weaponData.data.typeName !== 'katar') return 0;
 
-    return this.totalBonus['advKatar'] || 0;
+    return this.totalBonus['advKatarPower'] || 0;
   }
 
   private getStrikingAtk() {
@@ -776,20 +776,6 @@ export class DamageCalculator {
     const { baseWeaponAtk, baseWeaponLevel, refineBonus, overUpgradeBonus, highUpgradeBonus } = this.weaponData.data;
     const variant = baseWeaponAtk * baseWeaponLevel * 0.05;
 
-    let pseudoElementAtk = undefined;
-    if (isEDP) {
-      const pseudoPoison = this.getPurePropertyMultiplier(ElementType.Poison) * this.EDP_WEAPON_MULTIPLIER;
-      pseudoElementAtk = pseudoPoison;
-    }
-
-    const { magnumBreakPsedoBonus, magnumBreakClearEDP } = this.totalBonus;
-    if (magnumBreakPsedoBonus) {
-      const pseudoFire = this.getPurePropertyMultiplier(ElementType.Fire) * this.MAGNUM_BREAK_WEAPON_MULTIPLIER;
-      pseudoElementAtk = pseudoFire;
-    } else if (magnumBreakClearEDP) {
-      pseudoElementAtk = 0;
-    }
-
     const { totalStr, totalDex } = this.status;
     const mainState = this.isRangeAtk() ? totalDex : totalStr;
     const statBonus = (baseWeaponAtk * mainState) / 200;
@@ -800,9 +786,7 @@ export class DamageCalculator {
       let total = baseWeaponAtk + highUpgradeBonus + _variant + (this.totalBonus['weaponAtk'] || 0);
       total += statBonus;
       total += upgradeBonus;
-      if (pseudoElementAtk != null) {
-        total = total + total * pseudoElementAtk;
-      }
+
       total = total * sizePenalty;
 
       return floor(round(total, 3));
@@ -837,8 +821,8 @@ export class DamageCalculator {
     const propertyMultiplier = this.getPropertyMultiplier(propertyAtk);
 
     const extraAtk = this.getExtraAtk().total;
-    const cannonBallAtk = isExcludeCannanball ? 0 : this.totalBonus.cannonballAtk || 0;
-    const masteryAtk = this.getMasteryAtk().total + cannonBallAtk;
+    let cannonBallAtk = isExcludeCannanball ? 0 : this.totalBonus.cannonballAtk || 0;
+    const masteryAtk = this.getMasteryAtk().total;
 
     const mildwindMultiplier = this.isActiveMildwind ? propertyMultiplier : this.getPropertyMultiplier(ElementType.Neutral);
     const statusAtk = this.getStatusAtk() * 2 * mildwindMultiplier;
@@ -846,34 +830,78 @@ export class DamageCalculator {
     const { totalMin: _weaMin, totalMax: weaMax, totalMaxOver: weaMaxOver } = this.getWeaponAtk({ sizePenalty, isEDP });
     const weaMin = this.isMaximizeWeapon ? weaMax : _weaMin;
 
-    const aMin = this.getAtkGroupA({ totalAtk: weaMin + extraAtk });
-    const aMax = this.getAtkGroupA({ totalAtk: weaMax + extraAtk });
-    const aMaxOver = this.getAtkGroupA({ totalAtk: weaMaxOver + extraAtk });
-
-    // const equipAtk = this.getEquipAtk();
-    // const equipAtkFromEDP = isEDP ? equipAtk * (this.EDP_EQUIP_MULTIPLIER - 1) : 0;
-    let bMin = this.getAtkGroupB({ totalAtk: weaMin + extraAtk });
-    let bMax = this.getAtkGroupB({ totalAtk: weaMax + extraAtk });
-    let bMaxOver = this.getAtkGroupB({ totalAtk: weaMaxOver + extraAtk });
+    let pseudoElementAtk = undefined;
     if (isEDP) {
-      bMin = bMin * this.EDP_EQUIP_MULTIPLIER;
-      bMax = bMax * this.EDP_EQUIP_MULTIPLIER;
-      bMaxOver = bMaxOver * this.EDP_EQUIP_MULTIPLIER;
+      const pseudoPoison = this.getPurePropertyMultiplier(ElementType.Poison) * this.EDP_WEAPON_MULTIPLIER;
+      pseudoElementAtk = pseudoPoison;
     }
 
+    const { magnumBreakPsedoBonus, magnumBreakClearEDP } = this.totalBonus;
+    if (magnumBreakPsedoBonus) {
+      const pseudoFire = this.getPurePropertyMultiplier(ElementType.Fire) * this.MAGNUM_BREAK_WEAPON_MULTIPLIER;
+      pseudoElementAtk = pseudoFire;
+    } else if (magnumBreakClearEDP) {
+      pseudoElementAtk = 0;
+    }
+
+    let wecombineminAtk = weaMin + extraAtk;
+    let wecombinemaxAtk = weaMax + extraAtk;
+    let wecombinemaxOverAtk = weaMaxOver + extraAtk;
+
+    if (pseudoElementAtk != null) {
+      wecombineminAtk = wecombineminAtk + wecombineminAtk * pseudoElementAtk;
+      wecombinemaxAtk = wecombinemaxAtk + wecombinemaxAtk * pseudoElementAtk;
+      wecombinemaxOverAtk = wecombinemaxOverAtk + wecombinemaxOverAtk * pseudoElementAtk;
+    }
+
+    // ATK% Bonus Calculator
+    let aMin = this.getAtkGroupA({ totalAtk: wecombineminAtk });
+    let aMax = this.getAtkGroupA({ totalAtk: wecombinemaxAtk });
+    let aMaxOver = this.getAtkGroupA({ totalAtk: wecombinemaxOverAtk });
+
+    // EDP Bonus
+    if (isEDP) {
+      wecombineminAtk = wecombineminAtk * this.EDP_EQUIP_MULTIPLIER;
+      wecombinemaxAtk = wecombinemaxAtk * this.EDP_EQUIP_MULTIPLIER;
+      wecombinemaxOverAtk = wecombinemaxOverAtk * this.EDP_EQUIP_MULTIPLIER;
+    }
+
+    // Elemental Damage Calculator
+    wecombineminAtk = wecombineminAtk * propertyMultiplier;
+    wecombinemaxAtk = wecombinemaxAtk * propertyMultiplier;
+    wecombinemaxOverAtk = wecombinemaxOverAtk * propertyMultiplier;
+
+    // Bonus by Race , Size, Element, Class, MonsterID
+    let bMin = this.getAtkGroupB({ totalAtk: wecombineminAtk });
+    let bMax = this.getAtkGroupB({ totalAtk: wecombinemaxAtk });
+    let bMaxOver = this.getAtkGroupB({ totalAtk: wecombinemaxOverAtk });
+
+    // StatusAtk + WeaponAtk + Atk%
+    bMin = statusAtk + floor(aMin + bMin);
+    bMax = statusAtk + floor(aMax + bMax);
+    bMaxOver = statusAtk + floor(aMaxOver + bMaxOver);
+
+    // P.ATK Bonus
     const pAtkMultiplier = 1 + this.traitBonus.pAtk / 100;
 
-    // Element Amplifier
-    const cometMultiplier = this.getCometMultiplier();
-    const viMultiplier = this.getVIMultiplier(propertyAtk);
-    const bloomMultiplier = this.getBloomMultiplier(propertyAtk);
-    const evilMultiplier = this.getEvilMultiplier(propertyAtk);
-    const oratioMultiplier = this.getOratioMultiplier(propertyAtk);
-    const elementAmplifier = this.toPercent(cometMultiplier + viMultiplier + bloomMultiplier + oratioMultiplier + evilMultiplier + 100);
+    bMin = bMin + floor(bMin * pAtkMultiplier);
+    bMax = bMax + floor(bMax * pAtkMultiplier);
+    bMaxOver = bMaxOver + floor(bMaxOver * pAtkMultiplier);
 
-    const totalMin = ((statusAtk + floor((aMin + bMin) * propertyMultiplier)) * pAtkMultiplier + masteryAtk) * elementAmplifier;
-    const totalMax = ((statusAtk + floor((aMax + bMax) * propertyMultiplier)) * pAtkMultiplier + masteryAtk) * elementAmplifier;
-    const totalMaxOver = ((statusAtk + floor((aMaxOver + bMaxOver) * propertyMultiplier)) * pAtkMultiplier + masteryAtk) * elementAmplifier;
+    // Mastery Atk
+    bMin = bMin + masteryAtk;
+    bMax = bMax + masteryAtk;
+    bMaxOver = bMaxOver + masteryAtk;
+
+    // Ammo Atk
+    cannonBallAtk = floor(cannonBallAtk * propertyMultiplier);
+    bMin = bMin + cannonBallAtk;
+    bMax = bMax + cannonBallAtk;
+    bMaxOver = bMaxOver + cannonBallAtk;
+
+    const totalMin = bMin;
+    const totalMax = bMax;
+    const totalMaxOver = bMaxOver;
 
     return { totalMin, totalMax, totalMaxOver, propertyMultiplier };
   }
@@ -927,37 +955,75 @@ export class DamageCalculator {
     const rangedMultiplier = this.toPercent(ranged + 100);
     const baseSkillMultiplier = this.toPercent(baseSkillDamage);
     const equipSkillMultiplier = this.toPercent(100 + this.getSkillBonus(skillName));
-    const criDmgToMonster = floor(criDmg * criDmgPercentage || 0);
+    const criDmgToMonster = criDmg;
     const criMultiplier = canCri ? this.toPercent(criDmgToMonster + 100) : 1;
     const phyHitMultiplier = phyHit ? this.toPercent(hitDmg + 100) : 1;
 
     const dmgType = isMelee ? SkillType.MELEE : SkillType.RANGE;
-    const advKatar = 100 + this.getAdvanceKatar();
+    const advKatarPower = 100 + this.getAdvanceKatarPower();
     const debuffMultiplier = this.getDebuffMultiplier(dmgType);
-    const finalDmgMultipliers = [advKatar].map((b) => this.toPercent(b));
+    const finalDmgMultipliers = [advKatarPower].map((b) => this.toPercent(b));
     const infoForClass = this.infoForClass;
 
+    // Above Weapon Damage Calculator
     const skillFormula = (_totalAtk: number, _calcCri: boolean, _phyHit: boolean) => {
-      let total = this._class.modifyFinalAtk(_totalAtk, infoForClass);
-      if (_calcCri) total = floor(total * criMultiplier); // tested
-      else if (_phyHit) total = floor(total * phyHitMultiplier);
-      total = floor(total * rangedMultiplier); // tested
-      total = floor(total * baseSkillMultiplier); // tested
-      total = floor(total * equipSkillMultiplier);
-      if (!isHDefToSDef || isIgnoreRes) total = floor(total * resReduction);
-      total = floor(total * hardDef);
-      total = total - softDef; // tested
-      if (_calcCri) total = floor(total * this.criMultiplier);
 
+      let total = _totalAtk;
+
+      // Critical / Hit Physical Calculator
+      if (_calcCri) {
+        if (criDmgPercentage !== 1)
+          total = total * criDmgPercentage;
+        total = floor(total * criMultiplier); // tested
+      }
+      else if (_phyHit) total = floor(total * phyHitMultiplier);
+
+      // Melee/Range Bonus
+      total = floor(total * rangedMultiplier); // tested
+
+      // Skill Formula Bonus
+      total = floor(total * baseSkillMultiplier); // tested
+
+      // Advance Katar Mastery / Power Bonus
       for (const final of finalDmgMultipliers) {
         total = floor(total * final);
       }
 
+      // Res Calculate
+      if (!isHDefToSDef || isIgnoreRes)
+        total = floor(total * resReduction);
+
+      // Hard DEF Calculate
+      total = floor(total * hardDef);
+
+      // Soft DEF Calculate
+      total = total - softDef; // tested
+
+      // Equip Skill Bonus
+      total = floor(total * equipSkillMultiplier);
+
+      // Nature Critical Damage and C.Rate Bonus
+      if (_calcCri) total = floor(total * this.criMultiplier);
+
+      // Taekwando's Power and Advance Katar is same bonus.
+      //total = this._class.modifyFinalAtk(_totalAtk, infoForClass);
+
+      // Raid + Dark Claw + Spore Explosion + Oleum Sanctum + Quake Bonus
       total = floor(total * debuffMultiplier);
-      
+
+      // Comet + Venom Impress + All Bloom + Evil Curse + Oratio Bonus
+      const cometMultiplier = this.getCometMultiplier();
+      const viMultiplier = this.getVIMultiplier(weaponPropertyAtk);
+      const bloomMultiplier = this.getBloomMultiplier(weaponPropertyAtk);
+      const evilMultiplier = this.getEvilMultiplier(weaponPropertyAtk);
+      const oratioMultiplier = this.getOratioMultiplier(weaponPropertyAtk);
+      const elementAmplifier = this.toPercent(cometMultiplier + viMultiplier + bloomMultiplier + oratioMultiplier + evilMultiplier + 100);
+      total = floor(total * elementAmplifier);
+
       // Insignia bonus
       total = floor(total * this.getInsigniaMultiplier(weaponPropertyAtk));
 
+      // Monster Dmg.Taken
       if (this.monster.data.dmgtaken > 0) {
         total = floor(total * this.toPercent(this.monster.data.dmgtaken));
       }
@@ -997,7 +1063,7 @@ export class DamageCalculator {
       skill: skillData,
     });
 
-    const rawMinNoCri = canCri ? skillFormula(totalMin, false, phyHit) +  extraDmgCri : 0;
+    const rawMinNoCri = canCri ? skillFormula(totalMin, false, phyHit) + extraDmgCri : 0;
     const rawMaxNoCri = canCri ? skillFormula(totalMaxOver, false, phyHit) + extraDmgCri : 0;
 
     return {
@@ -1174,7 +1240,7 @@ export class DamageCalculator {
     const dmgType = isRangeType ? SkillType.RANGE : SkillType.MELEE;
     const rangedDmg = isRangeType ? range : melee;
     const rangedMultiplier = this.toPercent(rangedDmg + 100);
-    const advKatarMultiplier = (100 + this.getAdvanceKatar()) / 100;
+    const advKatarMultiplier = (100 + this.getAdvanceKatarPower()) / 100;
     const debuffMultiplier = this.getDebuffMultiplier(dmgType);
     const dmgMultiplier = this.toPercent(dmg + this.getFlatDmg('basicAtk') + 100);
     const extraDmg = this._class.getAdditionalDmg(this.infoForClass);
@@ -1214,7 +1280,7 @@ export class DamageCalculator {
     const isRangeType = this.isRangeAtk();
     const dmgType = isRangeType ? SkillType.RANGE : SkillType.MELEE;
     const rangedDmg = isRangeType ? range : melee;
-    const advKatarMultiplier = (100 + this.getAdvanceKatar()) / 100;
+    const advKatarMultiplier = (100 + this.getAdvanceKatarPower()) / 100;
     const debuffMultiplier = this.getDebuffMultiplier(dmgType);
     const rangedMultiplier = this.toPercent(rangedDmg + 100);
     const dmgMultiplier = this.toPercent(dmg + this.getFlatDmg('basicAtk') + 100);

@@ -335,17 +335,4 @@ export class StarEmperor extends StarGladiator {
 
     return Math.min(Math.floor((level + totalLuk + totalDex + bonusSize) / 3), 75);
   }
-
-  override modifyFinalAtk(currentAtk: number, _params: InfoForClass) {
-    const powerLv = this.bonuses.usedSkillMap.get('Power');
-    const wratBonus = (100 + this.getWrathAtkBonus(_params)) / 100;
-
-    let totalAtk = currentAtk;
-    if (powerLv >= 1) {
-      totalAtk = totalAtk + floor(totalAtk * (powerLv * 20) * 0.01);
-    }
-    totalAtk = totalAtk * wratBonus;
-
-    return totalAtk;
-  }
 }
